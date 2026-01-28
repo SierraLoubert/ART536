@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-
-    <<a-scene background="color: #FAFAFA">
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <a-scene background="color: #FAFAFA">
 
         <!-- Room Floor Remeber to Add jpg of tile-->
         <a-plane
@@ -178,7 +178,7 @@
         
          <!-- Wall SW-->
         <a-plane
-            rotation="-0 0 90"
+            rotation="0 0 90"
             position="30 -30 0 "
             width="1.08"
             height="4"
@@ -187,7 +187,7 @@
         
         <!-- Wall W-->
         <a-plane
-            rotation="-0 0 90"
+            rotation="-30 0 90"
             position="30 0 0 "
             width="1.83"
             height="4"
@@ -197,7 +197,7 @@
             <a-cylinder
                 position="30 0 -4"
                 radius="0.3"
-                height=.615"
+                height="0.615"
                 color="#FFC65D">
             </a-cylinder>
     
@@ -206,7 +206,6 @@
     
     </a-scene>
     
-
-    <script type="module" src="/src/main.js"></script>
+</script>
 </body>
 </html>
