@@ -7,6 +7,18 @@
 </head>
 
 <body>
+      <a-assets>
+
+            <img id="wall_diff" src="/beige_wall_001/beige_wall_001_diff_1k.png" alt="">
+            <img id="wall_ao" src="/beige_wall_001/beige_wall_001_ao_1k.png" alt="">
+            <img id="wall_nor" src="/beige_wall_001/beige_wall_001_nor_gl_1k.png" alt="">
+            <img id="wall_rough" src="/beige_wall_001/beige_wall_001_rough_1k.png" alt="">
+
+
+        </a-assets>
+
+
+
     <a-scene background="color: #FAFAFA">
          <a-entity> <!--Room Placement-->
         <!-- Room Floor Remeber to Add jpg of tile-->
@@ -44,7 +56,7 @@
         </a-light>
         </a-entity>
 
-      <a-entity position="30 0 0"> <!-- Wall N-->
+      <a-entity material: roughness: 1; metalness: 0; src: #wall_diff; roughnessMap: #wall_rough;  normalMap: #wall_nor; ambientOcclusionMap: #wall_ao"> <!-- Wall N-->
         <a-box 
         width="3.22"
         height="4"
