@@ -8,53 +8,14 @@
 
 <body>
         <a-scene background="color: #FAFAFA">
-            <a-assets>
-
-                    <img id="wall_diff" src="../assets/textures/beige_wall_001/beige_wall_001_diff_1k.png" alt="">
-                    <img id="wall_ao" src="../assets/textures/beige_wall_001/beige_wall_001_ao_1k.png" alt="">
-                    <img id="wall_nor" src="../assets/textures/beige_wall_001/beige_wall_001_nor_gl_1k.png" alt="">
-                    <img id="wall_rough" src="../assets/textures/beige_wall_001/beige_wall_001_rough_1k.png" alt="">
-
-                    <img id="cotton_diff" src="../assets/textures/cotton/cotton_jersey_diff_1k.png" alt="">
-                    <img id="cotton_ao" src="../assets/textures/beige_wall_001/cotton_jersey_ao_1k.png" alt="">
-                    <img id="cotton_nor" src="../assets/textures/beige_wall_001/cotton_jersey_nor_gl_1k.png" alt="">
-                    <img id="cotton_rough" src="../assets/textures/beige_wall_001/cotton_jersey_rough_1k.png" alt="">
-
-                    <img id="paintedbrick_diff" src="../assets/textures/painted_brick/painted_brick_diff_1k.png" alt="">
-                    <img id="paintedbrick_ao" src="../assets/textures/painted_brick/painted_brick_ao_1k.png" alt="">
-                    <img id="paintedbrick_nor" src="../assets/textures/painted_brick/painted_brick_nor_gl_1k.png" alt="">
-                    <img id="paintedbrick_rough" src="../assets/textures/painted_brick/painted_brick_rough_1k.png" alt="">
-
-                    <img id="curly_diff" src="../assets/textures/curly_teddy/curly_teddy_natural_diff_1k.png" alt="">
-                    <img id="curly_ao" src="../assets/textures/curly_teddy/curly_teddy_natural_ao_1k.png" alt="">
-                    <img id="curly_nor" src="../assets/textures/curly_teddy/curly_teddy_natural_nor_gl_1k.png" alt="">
-                    <img id="curly_rough" src="../assets/textures/curly_teddy/curly_teddy_natural_rough_1k.png" alt="">
-
-                    <img id="oakwood_diff" src="../assets/textures/oakwood/oak_veneer_01_diff_1k.png" alt="">
-                    <img id="oakwood_ao" src="../assets/textures/oakwood/oak_veneer_01_ao_1k.png" alt="">
-                    <img id="oakwood_nor" src="../assets/textures/oakwood/oak_veneer_01_nor_gl_1k.png" alt="">
-                    <img id="oakwood_rough" src="../assets/textures/oakwood/oak_veneer_01_rough_1k.png" alt="">
-
-                    <img id="floortiles_diff" src="../assets/textures/floortiles/interior_tiles_natural_diff_1k.png" alt="">
-                    <img id="floortiles_ao" src="../assets/textures/floortiles/interior_tiles_natural_ao_1k.png" alt="">
-                    <img id="floortiles_nor" src="../assets/textures/floortiles/interior_tiles_natural_nor_gl_1k.png" alt="">
-                    <img id="floortiles_rough" src="../assets/textures/floortiles/interior_tiles_natural_rough_1k.png" alt="">
-
-
-
-
-                </a-assets>
-
-
-
             
                 <a-entity material= "roughness: 1; metalness: 0; src: #floortiles_diff; roughnessMap: #floortiles_rough;  normalMap: #floortiles_nor; ambientOcclusionMap: #floortiles_ao"> <!--Room Placement-->
                 <!-- Room Floor-->
                 <a-box
                     rotation="-90 0 0"
                     position=".7 0 -0.25"
-                    width="10"
-                    height="10"
+                    width="3000"
+                    height="1500"
                     color="#6a6853"
                     rotation="0 0 0">
                 </a-box>
@@ -65,7 +26,7 @@
                     rotation="-90 0 0"
                     position=".7 4.002 -0.25"
                     width="3000"
-                    height="3000"
+                    height="1500"
                     depth=".01"
                     color="#ffecd4"
                     rotation="0 0 0">
@@ -87,8 +48,8 @@
                 <a-entity> <!-- Wall N-->
                     <a-box 
                     material= "roughness: 1; metalness: 0; src: #wall_diff; roughnessMap: #wall_rough;  normalMap: #wall_nor; ambientOcclusionMap: #wall_ao"
-                    width="3.22"
-                    height="4"
+                    width="2000"
+                    height="1500"
                     depth="0.3"
                     color="#f7f3ca"
                     rotation="0 0 0"
@@ -98,8 +59,8 @@
                 
                 <a-entity> <!-- Wall E-->
                 <a-box material="roughness: 1; metalness: 0; src: #paintedbrick_diff; roughnessMap: #paintedbrick_rough;  normalMap: #paintedbrick_nor; ambientOcclusionMap: #paintedbrick_ao; color:#ffb157"
-                width="3.605" 
-                height="4" 
+                width="2000"
+                height="1500" 
                 depth="0.3" 
                 rotation="0 90 0"
                 color="#f7f3ca"
@@ -118,8 +79,8 @@
                 <a-entity> <!-- Wall S-->
                     <a-box 
                     material="roughness: 1; metalness: 0; src: #wall_diff; roughnessMap: #wall_rough;  normalMap: #wall_nor; ambientOcclusionMap: #wall_ao"
-                    width="2.47"
-                    height="4"
+                    width="2000"
+                    height="1500"
                     depth="0.3"
                     color="#f7f3ca"
                     rotation="0 0 0"
@@ -139,8 +100,8 @@
                 <a-entity><!-- Wall W-->
                 <a-box 
                 material="roughness: 1; metalness: 0; src: #wall_diff; roughnessMap: #wall_rough;  normalMap: #wall_nor; ambientOcclusionMap: #wall_ao"
-                width="2.75"
-                height="4"
+                width="2000"
+                height="1500"
                 depth="0.3"
                 color="#f7f3ca"
                 rotation="0 -90 0"
@@ -151,8 +112,8 @@
                 <!-- Door -->
                 <a-box  
                 material= "roughness: 1; metalness: 0; src: #oakwood_diff; roughnessMap: #oakwood_rough;  normalMap: #oakwood_nor; ambientOcclusionMap: #oakwood_ao"
-                width=".955"
-                height="2.21"
+                width="200"
+                height="340"
                 depth=".04" 
                 color="#E59C5A"
                 rotation="0 45 0"
