@@ -1,41 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.4/dist/aframe-physics-system.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bowling Lane</title>
 </head>
+
 <body>
-    <square>
-        <a-plane position="11 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+<a-scene physics="gravity: -9.8">
 
-          <a-sphere id="ball01"
-						position="-1.1 6 -5"
-						radius="1.25"
-						color="#fff"
-						dynamic-body></a-sphere>
+    <!-- Camera -->
+    <a-camera position="0 5 10"></a-camera>
 
-            <a-sphere id="ball02"
-						position="2 6 -5"
-						radius="1.25" color="#fff"
-						dynamic-body
-						constraint="target: #ball01; type: distance; distance: 2.5"></a-sphere>
+    <!-- Floor -->
+    <a-plane position="11 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-        <a-box position="0.5 1 -5" static-body></a-box>
+    <!-- Balls -->
+    <a-sphere id="ball01"
+        position="-1.1 6 -5"
+        radius="1.25"
+        color="#fff"
+        dynamic-body>
+    </a-sphere>
 
-        <a-box position="0 0 -4" rotation="-90 0 0" width="40" height="40" depth="0.1" color="#7BC8A4" static-body="shape: box;"></a-box>
+    <a-sphere id="ball02"
+        position="2 6 -5"
+        radius="1.25"
+        color="#fff"
+        dynamic-body
+        constraint="target: #ball01; type: distance; distance: 2.5">
+    </a-sphere>
 
-        <a-cylinder position="1 5 -3"
-            radius="0.5" height="1.5"
-            color="#FFC65D"
-            dynamic-body="shape: none; mass: 8;"
-            shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7 ;"
-            shape__bottom="shape: sphere; offset: 0 -0.75 0; radius: 0.7 ;"
-            shape__center="shape: cylinder; offset: 0 0 0; height: 1; radiusTop: 0.7; radiusBottom: 0.7;"></a-cylinder>
-    
+    <!-- Boxes -->
+    <a-box position="0.5 1 -5" static-body></a-box>
+
+    <a-box position="0 0 -4"
+        rotation="-90 0 0"
+        width="40" height="40" depth="0.1"
+        color="#7BC8A4"
+        static-body="shape: box;">
+    </a-box>
+
+    <!-- Cylinder -->
+    <a-cylinder position="1 5 -3"
+        radius="0.5" height="1.5"
+        color="#FFC65D"
+        dynamic-body="shape: none; mass: 8;"
+        shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
+        shape__bottom="shape: sphere; offset: 0 -0.75 0; radius: 0.7;"
+        shape__center="shape: cylinder; offset: 0 0 0; height: 1; radiusTop: 0.7; radiusBottom: 0.7;">
+    </a-cylinder>
+
+</a-scene>
 </body>
 </html>
