@@ -19,14 +19,14 @@
 
     <!-- Balls -->
     <a-sphere id="ball01"
-        position="-1.1 6 -5"
+        position="-1.1 6 4"
         radius="1.25"
         color="#fff"
         dynamic-body>
     </a-sphere>
 
     <a-sphere id="ball02"
-        position="2 6 -5"
+        position="2 6 4"
         radius="1.25"
         color="#fff"
         dynamic-body
@@ -34,7 +34,10 @@
     </a-sphere>
 
     <!-- Boxes -->
-    <a-box position="0.5 1 -5" static-body></a-box>
+    <a-box position="2.5 1 4" 
+    width="4" height="8" depth="1"
+    rotation="45"
+    static-body></a-box>
 
     <a-box position="0 0 -4"
         rotation="-90 0 0"
@@ -43,8 +46,18 @@
         static-body="shape: box;">
     </a-box>
 
-    <!-- Cylinder -->
+    <!-- Cylinder #1 -->
     <a-cylinder position="1 5 -3"
+        radius="0.5" height="1.5"
+        color="#FFC65D"
+        dynamic-body="shape: none; mass: 8;"
+        shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
+        shape__bottom="shape: sphere; offset: 0 -0.75 0; radius: 0.7;"
+        shape__center="shape: cylinder; offset: 0 0 0; height: 1; radiusTop: 0.7; radiusBottom: 0.7;">
+    </a-cylinder>
+
+     <!-- Cylinder #2 -->
+    <a-cylinder position="1 2 -5"
         radius="0.5" height="1.5"
         color="#FFC65D"
         dynamic-body="shape: none; mass: 8;"
