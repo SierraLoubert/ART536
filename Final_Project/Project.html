@@ -14,21 +14,21 @@
 
             <a-mixin id="floor" geometry="primitive: box; width: 3498; height: 487; depth:0.1"></a-mixin>
             
-            <a-mixin id="side wall" geometry="primitive: box; width: 3498; height: 346; depth:0.3"></a-mixin>
+            <a-mixin id="sidewall" geometry="primitive: box; width: 3498; height: 346; depth:0.3"></a-mixin>
 
-            <a-mixin id="small wall" geometry="primitive: box; width: 496; height: 346; depth:0.3"></a-mixin>
+            <a-mixin id="smallwall" geometry="primitive: box; width: 496; height: 346; depth:0.3"></a-mixin>
 
-            <a-mixin id="main wall" geometry="primitive: box; width: 397.261; height: 200; depth:0.3"></a-mixin>
+            <a-mixin id="mainwall" geometry="primitive: box; width: 397.261; height: 200; depth:0.3"></a-mixin>
 
-            <a-mixin id="doorway wall" geometry="primitive: box; width: 102.575; height: 44.936; depth:0.3"></a-mixin>
+            <a-mixin id="doorwaywall" geometry="primitive: box; width: 102.575; height: 44.936; depth:0.3"></a-mixin>
 
-            <a-mixin id="circle wall" geometry="primitive: cylinder; height: 700; radius: 80"></a-mixin>
+            <a-mixin id="circlewall" geometry="primitive: cylinder; height: 700; radius: 80"></a-mixin>
 
             <a-mixin id="door" geometry="primitive: box; width: 200; height: 326; depth:0.3; rotation: 0 90 0"></a-mixin>
 
-            <a-mixin id="Square Light" geometry="primitive: box; width: 2; height: 5; depth:0.3" material="emissive: #ffffee; emissiveIntensity: 1;"></a-mixin>
+            <a-mixin id="squarelight" geometry="primitive: box; width: 2; height: 5; depth:0.3" material="emissive: #ffffee; emissiveIntensity: 1;"></a-mixin>
 
-            <a-mixin id="Circle Light" geometry="primitive: cylinder; height: 5; radius: 0.3"></a-mixin>
+            <a-mixin id="circlelight" geometry="primitive: cylinder; height: 5; radius: 0.3"></a-mixin>
 
             <a-mixin id="column" geometry="primitive: cylinder; height: 5; radius: 0.5"></a-mixin>
 
@@ -51,61 +51,59 @@
 
                     <!-- Ceiling-->
                     <a-box mixin="floor primary"
-                        position="1678 296 -0.25"
+                        position="1678 292 -0.25"
                         rotation="90 0 0">
                     </a-box>
 
                     <!-- Wall N-->
                     <a-box 
-                    mixin="small wall primary"
+                    mixin="smallwall primary"
                     position="3436 125 4.542"
                     rotation= "0 90 0">
                     </a-box> 
                 
                     <!-- Wall E-->
                     <a-box 
-                    mixin="side wall primary"
-                    position="1680.20 186.724 245.32">
+                    mixin="sidewall primary"
+                    position="1680.20 121.433 245.32">
                     </a-box>
 
                     <!-- Wall W-->
                     <a-box 
-                    mixin="side wall primary"
-                    position="1680.20 186.724 -245.32">
+                    mixin="sidewall primary"
+                    position="1680.20 121.433 -245.32">
                     </a-box> 
 
                     <!-- Wall S-->
                     <a-box 
-                    mixin="small wall primary"
+                    mixin="smallwall primary"
                     position="-68 125 4.542"
                     rotation= "0 90 0">
                     </a-box> 
 
                     <!-- Wall #1-->
                     <a-box 
-                    mixin="main wall primary"
-                    position="1098 125 4.542"
+                    mixin="mainwall primary"
+                    position="1098 50.755 49.542"
                     rotation= "0 90 0">
                     </a-box> 
                     <a-box 
-                    mixin="doorway wall primary"
-                    position="1098 125 4.542"
+                    mixin="doorwaywall primary"
+                    position="1098 127.7 -199.685"
                     rotation= "0 90 0">
                     </a-box> 
 
                     <!-- Wall #2-->
-                     <!--
                     <a-box 
-                    mixin="main wall primary"
-                    position="2264 125 4.542"
+                    mixin="mainwall primary"
+                    position="1098 50.755 49.542"
                     rotation= "0 90 0">
                     </a-box> 
                     <a-box 
-                    mixin="doorway wall primary"
-                    position="1098 125 4.542"
+                    mixin="doorwaywall primary"
+                    position="1098 127.7 -199.685"
                     rotation= "0 90 0">
                     </a-box> 
-                -->
                 </a-entity>
 
 
