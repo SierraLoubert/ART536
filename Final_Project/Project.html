@@ -12,11 +12,15 @@
             <!-- Asset Rules-->
             <a-assets>
 
-            <a-mixin id="floor" geometry="primitive: box; width: 3498; height: 487; depth:0.1; rotation: -90 0 0"></a-mixin>
+            <a-mixin id="floor" geometry="primitive: box; width: 3498; height: 487; depth:0.1"></a-mixin>
             
-            <a-mixin id="side wall" geometry="primitive: box; width: 3498; height: 346; depth:0.3; rotation: 0 0 0"></a-mixin>
+            <a-mixin id="side wall" geometry="primitive: box; width: 3498; height: 346; depth:0.3"></a-mixin>
 
-            <a-mixin id="small wall" geometry="primitive: box; width: 496; height: 346; depth:0.3; rotation: 0 90 0"></a-mixin>
+            <a-mixin id="small wall" geometry="primitive: box; width: 496; height: 346; depth:0.3"></a-mixin>
+
+            <a-mixin id="main wall" geometry="primitive: box; width: 397.261; height: 200; depth:0.3"></a-mixin>
+
+            <a-mixin id="doorway wall" geometry="primitive: box; width: 102.575; height: 44.936; depth:0.3"></a-mixin>
 
             <a-mixin id="circle wall" geometry="primitive: cylinder; height: 700; radius: 80"></a-mixin>
 
@@ -41,54 +45,73 @@
                 <a-entity id="Rooms">
                     <!-- Room Floor-->
                     <a-box mixin="floor primary"
-                        position="1678 -50 -0.25">
+                        position="1678 -50 -0.25"
+                        rotation= "90 0 0">
                     </a-box>
 
                     <!-- Ceiling-->
                     <a-box mixin="floor primary"
-                        position="1678 296 -0.25">
+                        position="1678 296 -0.25"
+                        rotation="90 0 0">
                     </a-box>
 
                     <!-- Wall N-->
                     <a-box 
                     mixin="small wall primary"
-                    position="3436 125 4.542">
+                    position="3436 125 4.542"
+                    rotation= "0 90 0">
                     </a-box> 
                 
                     <!-- Wall E-->
                     <a-box 
                     mixin="side wall primary"
-                    position="1671.127 120.764 232.98">
+                    position="1680.20 186.724 245.32">
                     </a-box>
 
                     <!-- Wall W-->
                     <a-box 
                     mixin="side wall primary"
-                    position="1671.127 120.764 -239.318">
+                    position="1680.20 186.724 -245.32">
                     </a-box> 
 
                     <!-- Wall S-->
                     <a-box 
                     mixin="small wall primary"
-                    position="-68 125 4.542">
+                    position="-68 125 4.542"
+                    rotation= "0 90 0">
                     </a-box> 
 
                     <!-- Wall #1-->
                     <a-box 
-                    mixin="small wall primary"
-                    position="1098 125 4.542">
+                    mixin="main wall primary"
+                    position="1098 125 4.542"
+                    rotation= "0 90 0">
+                    </a-box> 
+                    <a-box 
+                    mixin="doorway wall primary"
+                    position="1098 125 4.542"
+                    rotation= "0 90 0">
                     </a-box> 
 
                     <!-- Wall #2-->
+                     <!--
                     <a-box 
-                    mixin="small wall primary"
-                    position="2264 125 4.542">
+                    mixin="main wall primary"
+                    position="2264 125 4.542"
+                    rotation= "0 90 0">
                     </a-box> 
+                    <a-box 
+                    mixin="doorway wall primary"
+                    position="1098 125 4.542"
+                    rotation= "0 90 0">
+                    </a-box> 
+                -->
                 </a-entity>
 
 
                 <!--Light-->
                 <a-entity id="Lights">
+                    <!--
                     <a-box
                         mixin="floor primary"
                         position="-0.628 3.944 0.567"
@@ -98,7 +121,9 @@
                     </a-light>
                     <a-light type="directional" intensity="8"  color="#FFF">
                     </a-light>
+                    -->
                 </a-entity>
+            
 
                 <!--Rectaungler Platform-->
                         <a-box
