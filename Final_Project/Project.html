@@ -22,7 +22,7 @@
 
             <a-mixin id="doorwaywall" geometry="primitive: box; width: 102.575; height: 44.936; depth:0.3"></a-mixin>
 
-            <a-mixin id="circlewall" geometry="primitive: cylinder; height: 700; radius: 80"></a-mixin>
+            <a-mixin id="circlewall" geometry="primitive: cylinder; height: 100; radius: 80"></a-mixin>
 
             <a-mixin id="door" geometry="primitive: box; width: 200; height: 326; depth:0.3; rotation: 0 90 0"></a-mixin>
 
@@ -200,10 +200,8 @@
 
                  <!--Circle Wall-->
                     <a-cylinder
-                    position="839 0.108 2.291"
-                    radius="80"
-                    height="700"
-                    color="#707070">
+                    mixin="circlewall primary"
+                    position="839 0.108 2.291">
             `     </a-cylinder>
 
                     <!--Circle Platform
