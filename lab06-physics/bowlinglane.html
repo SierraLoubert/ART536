@@ -19,29 +19,29 @@
 
     <!-- Balls -->
     <a-sphere id="ball01"
-        position="3 60 4"
+        position="5 60 4"
         radius="1.25"
         color="#fff"
         dynamic-body>
     </a-sphere>
 
     <!-- Boxes -->
-    <a-box position="2 1 4" 
+    <a-box position="6 1 4" 
     width="4" height="8" depth="1"
     rotation="45"
     static-body></a-box>
 
     <a-box position="0 0 -4"
         rotation="-90 0 0"
-        width="40" height="40" depth="0.1"
+        width="40" height="90" depth="0.1"
         color="#7BC8A4"
         static-body="shape: box;">
     </a-box>
 
     <a-entity>
         <!-- Cylinder #1 -->
-        <a-cylinder position="4 1 -9"
-            radius="0.5" height="1.5"
+        <a-cylinder position="4 1 -17"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -50,8 +50,8 @@
         </a-cylinder>
 
         <!-- Cylinder #2 -->
-        <a-cylinder position="3.5 1 -11"
-            radius="0.5" height="1.5"
+        <a-cylinder position="3.5 1 -19"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -60,8 +60,8 @@
         </a-cylinder>
 
         <!-- Cylinder #3 -->
-        <a-cylinder position="5.5 1 -11"
-            radius="0.5" height="1.5"
+        <a-cylinder position="5.5 1 -19"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -70,8 +70,8 @@
         </a-cylinder>
 
         <!-- Cylinder #4 -->
-        <a-cylinder position="3 1 -13"
-            radius="0.5" height="1.5"
+        <a-cylinder position="3 1 -21"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -80,8 +80,8 @@
         </a-cylinder>
 
         <!-- Cylinder #5 -->
-        <a-cylinder position="5 1 -13"
-            radius="0.5" height="1.5"
+        <a-cylinder position="5 1 -21"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -90,8 +90,8 @@
         </a-cylinder>
 
         <!-- Cylinder #6 -->
-        <a-cylinder position="7 1 -13"
-            radius="0.5" height="1.5"
+        <a-cylinder position="7 1 -21"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -100,8 +100,8 @@
         </a-cylinder>
 
         <!-- Cylinder #7 -->
-        <a-cylinder position="2 1 -15"
-            radius="0.5" height="1.5"
+        <a-cylinder position="2 1 -23"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -110,8 +110,8 @@
         </a-cylinder>
 
         <!-- Cylinder #8 -->
-        <a-cylinder position="4 1 -15"
-            radius="0.5" height="1.5"
+        <a-cylinder position="4 1 -23"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -120,8 +120,8 @@
         </a-cylinder>
 
         <!-- Cylinder #9 -->
-        <a-cylinder position="6 1 -15"
-            radius="0.5" height="1.5"
+        <a-cylinder position="6 1 -23"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
@@ -130,14 +130,27 @@
         </a-cylinder>
 
         <!-- Cylinder #10 -->
-        <a-cylinder position="9 1 -15"
-            radius="0.5" height="1.5"
+        <a-cylinder position="8 1 -23"
+            radius="0.5" height="2.5"
             color="#FFC65D"
             dynamic-body="shape: none; mass: 8;"
             shape__top="shape: sphere; offset: 0 0.75 0; radius: 0.7;"
             shape__bottom="shape: sphere; offset: 0 -0.75 0; radius: 0.7;"
             shape__center="shape: cylinder; offset: 0 0 0; height: 1; radiusTop: 0.7; radiusBottom: 0.7;">
         </a-cylinder>
+
+        <!--Lanes-->
+        <a-box position="10 1 -4"
+        width="80" height="1" depth="0.1"
+        rotation="0 90 0"
+        static-body="shape: box;">
+    </a-box>
+
+        <a-box position="-0.5 1 -4"
+        width="80" height="1" depth="0.1"
+        rotation="0 90 0"
+        static-body="shape: box;">
+    </a-box>
      </a-entity>
 
 
