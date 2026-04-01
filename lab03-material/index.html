@@ -34,7 +34,7 @@
 
             <a-sphere position="-3 1.25 -5" radius="1.25"  material=" color: #fff; roughness: 1; metalness: 0; src: #wall_diff; ambientOcclusionMap: #wall_ao" shadow></a-sphere>
         
-            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow></a-plane>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow class="floor"></a-plane>
         </a-entity> 
 
         <a-entity position="-14 0 0">
@@ -44,7 +44,7 @@
 
             <a-sphere position="-3 1.25 -5" radius="1.25"  material=" color: #EF2D5E; roughness: 1; metalness: 1; src: #brick_diff" shadow></a-sphere>
         
-            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow></a-plane>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow class="floor"></a-plane>
         </a-entity>
 
            <a-entity position="14 0 0">
@@ -54,15 +54,23 @@
 
             <a-sphere position="-3 1.25 -5" radius="1.25" color="#EF2D5E" material="roughness= 0; src: #brick_diff" shadow></a-sphere>
         
-            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow></a-plane>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow class="floor"></a-plane>
         </a-entity>
 
         <a-entity light="intensity: 0.5; type: ambient"></a-entity>
         <a-entity light="intensity: 7; type: point" position="1.5 1.7 -2.5"></a-entity>
-
+        <a-entity id="player" position="0 1.6 0">
+            <!-- camera -->
+            <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
+            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
+        </a-entity>
     </a-scene>
 
       <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
-    
+     <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
+
 </body>
 </html>
