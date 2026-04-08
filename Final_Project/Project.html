@@ -99,7 +99,7 @@
 
                 <a-entity id="player">
                     <!-- camera -->
-                    <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+                    <a-entity id="camera" camera wasd-controls look-controls position="0 6.8 0"></a-entity>
                     <!-- hand controls -->
                     <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
                     <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
@@ -268,7 +268,7 @@
                             >
                         </a-circle>
                     <!--light circle #6-->
-                    mixin="circlelight sec<a-circle
+                        <a-circle
                             mixin="circlelight secondary"
                             position="32 9.2 -5.5"
                             >
