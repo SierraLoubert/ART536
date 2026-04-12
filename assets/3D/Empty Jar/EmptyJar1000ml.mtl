@@ -1,0 +1,36 @@
+newmtl Glass_Mat
+Ni 1.6
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal EmptyJar1000ml/Glass_Mat_normal.png
+map_d EmptyJar1000ml/Glass_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_map_roughness EmptyJar1000ml/Glass_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm EmptyJar1000ml/Glass_Mat_metallic.png
+Ns 16
+adobe_map_translucence EmptyJar1000ml/Glass_Mat_translucence.png
+map_Kd EmptyJar1000ml/Glass_Mat_baseColor.png
+newmtl Wood_Mat
+Ni 1.6
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal EmptyJar1000ml/Wood_Mat_normal.png
+map_d EmptyJar1000ml/Wood_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness EmptyJar1000ml/Wood_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm EmptyJar1000ml/Wood_Mat_metallic.png
+Ns 16
+map_Kd EmptyJar1000ml/Wood_Mat_baseColor.png
