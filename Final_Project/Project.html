@@ -47,7 +47,7 @@
 
                 <a-mixin id="column" geometry="primitive: cylinder; height: 60; radius: 6" shadow></a-mixin>
 
-                <a-mixin id="platform" geometry="primitive: box; width: 2; height: 4; depth:2" shadow></a-mixin>
+                <a-mixin id="platform" geometry="primitive: box; width: 2; height: 1; depth:2" shadow></a-mixin>
 
                 <a-mixin id="fivebox" geometry="primitive: box; width: 2; height: 2; depth:1" shadow></a-mixin>
 
@@ -100,11 +100,19 @@
                     <img id="yougotthis" src="../assets/textures/Finalproject/yougotthis.png" alt="">
                     
             </a-assets>
-        <a-assets>
+        <a-assets id="3Dishmodels">
          <a-asset-item id="map-middle-dot" src="../assets/models/MapMiddle Dot.gltf"></a-asset-item>
          <a-asset-item id="mapdots" src="../assets/models/Mapdots.gltf"></a-asset-item>
          <a-asset-item id="spider" src="../assets/models/Spider.gltf"></a-asset-item>
         </a-assets>
+
+        <a-assets id="3D-Online">
+            <a-asset-item id="crate-obj" src="ww"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item>
+        </a-assets>
+
+        <!-- Using the asset management system. Used below-->
+        <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model
 
        
 
@@ -113,7 +121,7 @@
 
                 <a-entity id="player">
                     <!-- camera -->
-                    <a-entity id="camera" camera wasd-controls look-controls position="0 4.8 0"></a-entity>
+                    <a-entity id="camera" position="0 1.6 0" camera wasd-controls look-controls position="0 4.8 0"></a-entity>
                     <!-- hand controls -->
                     <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
                     <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
