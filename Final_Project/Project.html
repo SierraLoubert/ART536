@@ -17,15 +17,15 @@
 
                 <a-mixin id="floor" geometry="primitive: box; width: 83.952; height: 11.688; depth:0.1"></a-mixin>
             
-                <a-mixin id="sidewall" geometry="primitive: box; width: 83.952; height: 11.688; depth:0.3"></a-mixin>
+                <a-mixin id="sidewall" geometry="primitive: box; width: 83.952; height: 6; depth:0.3"></a-mixin>
 
-                <a-mixin id="room 1" geometry="primitive: box; width: 27.952; height: 11.688; depth:0.1"></a-mixin>
+                <a-mixin id="room 1" geometry="primitive: box; width: 27.952; height: 6; depth:0.1"></a-mixin>
 
-                <a-mixin id="goldsidewall" geometry="primitive: box; width: 31; height: 11.688; depth:0.002"></a-mixin>
+                <a-mixin id="goldsidewall" geometry="primitive: box; width: 31; height: 6; depth:0.002"></a-mixin>
 
-                <a-mixin id="smallwall" geometry="primitive: box; width: 12; height: 11; depth:0.3"></a-mixin>
+                <a-mixin id="smallwall" geometry="primitive: box; width: 12; height: 6; depth:0.3"></a-mixin>
 
-                <a-mixin id="goldwall" geometry="primitive: box; width: 12; height: 11; depth:0.3"></a-mixin>
+                <a-mixin id="goldwall" geometry="primitive: box; width: 12; height: 6; depth:0.3"></a-mixin>
 
                 <a-mixin id="mainwall" geometry="primitive: box; width: 9.5; height: 10.688; depth:0.3"></a-mixin>
 
@@ -103,7 +103,7 @@
         <a-assets id="3Dishmodels">
          <a-asset-item id="map-middle-dot" src="../assets/models/MapMiddle Dot.gltf"></a-asset-item>
          <a-asset-item id="mapdots" src="../assets/models/Mapdots.gltf"></a-asset-item>
-         <a-asset-item id="spider" src="../assets/models/Spider.gltf"></a-asset-item>
+          <a-asset-item id="spider" src="../assets/models/spider.glb"></a-asset-item>
         </a-assets>
 
         <a-assets id="3D-Online">
@@ -878,7 +878,7 @@
                     ></a-plane>
 
 
-                <a-gltf-model src="#spider" position="10.759 5 5.58" scale="1 1 1"></a-gltf-model>
+                <a-gltf-model src="#spider" position="10.759 5 5.58" scale=".02 .02 .02"></a-gltf-model>
                 
                     <a-plane id="whatarespider" material="shader:flat;  src:#whatarespider;"
                     position="10 8 5.58"
@@ -961,6 +961,8 @@
                     height="5.57" width="7.19" depth="0.1"
                     ></a-plane>
 
+                    <a-gltf-model src="#spider" position="32.882 5 -3.373" scale=".02 .02 .02"></a-gltf-model>
+
                     <a-gltf-model src="#map-middle-dot" position="54 5 -5.449" scale=".02 .02 .02"></a-gltf-model>
 
                     <!--<a-plane  id="mapnormal" material="shader:flat;  src:#mapnormal;" 
@@ -1006,6 +1008,9 @@
                     rotation="0 -90 0"
                     height="6" width="8" depth="0.1"
                     ></a-plane>
+
+                    <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0" scale=".02 .02 .02"></a-gltf-model>
+
                 </a-entity>
 
             
