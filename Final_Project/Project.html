@@ -15,7 +15,7 @@
             <!-- Asset Rules-->
             <a-assets>
 
-                <a-mixin id="floor" geometry="primitive: box; width: 83.952; height: 11.688; depth:0.1"></a-mixin>
+                <a-mixin id="floor" geometry="primitive: box; width: 85; height: 10; depth:0.1"></a-mixin>
             
                 <a-mixin id="sidewall" geometry="primitive: box; width: 83.952; height: 6; depth:0.3"></a-mixin>
 
@@ -27,17 +27,17 @@
 
                 <a-mixin id="goldwall" geometry="primitive: box; width: 12; height: 6; depth:0.3"></a-mixin>
 
-                <a-mixin id="mainwall" geometry="primitive: box; width: 9.5; height: 10.688; depth:0.3"></a-mixin>
+                <a-mixin id="mainwall" geometry="primitive: box; width: 8.7; height: 6; depth:0.3"></a-mixin>
 
-                 <a-mixin id="goldmainwall" geometry="primitive: box; width: 9.5; height: 10.688; depth:0.1"></a-mixin>
+                 <a-mixin id="goldmainwall" geometry="primitive: box; width: 8.7; height: 6; depth:0.1"></a-mixin>
 
-                <a-mixin id="doorwaywall" geometry="primitive: box; width: 11; height: 3.84; depth:0.3"></a-mixin>
+                <a-mixin id="doorwaywall" geometry="primitive: box; width: 8.7; height: 3; depth:0.3"></a-mixin>
 
-                 <a-mixin id="golddoorwaywall" geometry="primitive: box; width: 11; height: 3.84; depth:0.1"></a-mixin>
+                 <a-mixin id="golddoorwaywall" geometry="primitive: box; width: 8.7; height: 3; depth:0.1"></a-mixin>
 
-                <a-mixin id="circlewall" geometry="primitive: cylinder; height: 8; radius: 3;"></a-mixin>
+                <a-mixin id="circlewall" geometry="primitive: cylinder; height: 7; radius: 1;"></a-mixin>
 
-                <a-mixin id="door" geometry="primitive: box; width: 4.8; height: 7.824; depth:1.8;"></a-mixin>
+                <a-mixin id="door" geometry="primitive: box; width: 4.470; height: 7.824; depth:1.8;"></a-mixin>
 
                 <a-mixin id="squarelightsquareroomone" geometry="primitive: box; width: 2.3; height: 2.3; depth:0.1:" material= "emissive: #b47f56; emissiveIntensity: 1;"></a-mixin>
 
@@ -121,7 +121,7 @@
 
                 <a-entity id="player">
                     <!-- camera -->
-                    <a-entity id="camera" position="0 1.6 0" camera wasd-controls look-controls position="0 4.8 0"></a-entity>
+                    <a-entity id="camera" position="0 1.6 0" camera wasd-controls look-controls position="0 4.470 0"></a-entity>
                     <!-- hand controls -->
                     <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
                     <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
@@ -144,66 +144,66 @@
                     <!-- Wall N-->
                     <a-box 
                     mixin="smallwall primary"
-                    position="-1.5 5 0"
+                    position="-1.5 3 0"
                     rotation= "0 90 0">
                     </a-box> 
 
                      <a-box 
                     mixin="goldwall secondary"
-                    position="-1 5 0"
+                    position="-1 3 0"
                     rotation= "0 90 0">
                     </a-box> 
                 
                     <!-- Wall E-->
                     <a-box 
                     mixin="sidewall primary"
-                    position="40.321 4.75 -5">
+                    position="40.321 3 -5">
                     </a-box>
 
                     <!-- Wall W-->
                     <a-box 
                     mixin="goldsidewall secondary"
-                    position="12.5 4.5 4.5">
+                    position="12.5 3 4.470">
                     </a-box> 
 
                      <a-box 
                     mixin="goldsidewall secondary"
-                    position="12.321 4.75 -4.50">
+                    position="12.321 3 -4.470">
                     </a-box>
 
                     <!-- Wall W-->
                     <a-box 
                     mixin="sidewall primary"
-                    position="40.5 4.5 5">
+                    position="40.5 3 5">
                     </a-box> 
 
                     <!-- Wall S-->
                     <a-box 
                     mixin="smallwall primary"
-                    position="82.592 5 .175"
+                    position="82.592 3 .175"
                     rotation= "0 90 0">
                     </a-box> 
 
                     <!-- Wall #1-->
                     <a-box 
                     mixin="mainwall primary"
-                    position="27.984 5 -1.367"
+                    position="27.984 3 -1.367"
                     rotation= "0 90 0">
                     </a-box> 
                     <a-box 
                     mixin="doorwaywall primary"
-                    position="27.984 8.287 0.550"
+                    position="27.984 5 0.550"
                     rotation= "0 90 0">
                     </a-box>
 
                     <a-box 
                     mixin="goldmainwall secondary"
-                    position="27.674 5 -1.367"
+                    position="27.674 3 -1.367"
                     rotation= "0 90 0">
                     </a-box> 
                      <a-box 
                     mixin="golddoorwaywall secondary"
-                    position="27.674 8.287 0.550"
+                    position="27.674 5 0.550"
                     rotation= "0 90 0">
                     </a-box>
 
@@ -215,7 +215,7 @@
                     </a-box> 
                     <a-box 
                     mixin="doorwaywall primary"
-                    position="55.968 8.287 0.550"
+                    position="55.968 6 0.550"
                     rotation= "0 90 0">
                     </a-box> 
                 </a-entity> 
@@ -259,75 +259,75 @@
                      <!--light circle #0-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="1 9.8 -5.5"
+                            position="1 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="1 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="1 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #1-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="7 9.8 -5.5"
+                            position="7 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #2-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="5 9.8 -5.5"
+                            position="5 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #3-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="8.5 9.8 -5.5"
+                            position="8.5 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #4-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="16 9.8 -5.5"
+                            position="16 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #5-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="29 9.8 -5.5"
+                            position="29 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #6-->
                         <a-circle
                             mixin="circlelight secondary"
-                            position="32 9.2 -5.5"
+                            position="32 9.2 -4.470"
                             >
                         </a-circle>ondary"
                     <!--light circle #7-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="35.5 9.8 -5.5"
+                            position="35.5 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #8-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="43 9.8 -5.5"
+                            position="43 9.8 -4.470"
                             >
                         </a-circle>
                         <!--light circle #9-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="34 9.8 -5.5"
+                            position="34 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #10-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="44 9.8 -5.5"
+                            position="44 9.8 -4.470"
                             >
                         </a-circle>
                     <!--light circle #11-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="54 9.8 -5.5"
+                            position="54 9.8 -4.470"
                             >
                         </a-circle>
                 </a-entity>
@@ -336,67 +336,67 @@
                     <!--light circle #1-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="3 9.8 5.8"
+                            position="3 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #2-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="5 9.8 5.8"
+                            position="5 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #3-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="8.5 9.8 5.8"
+                            position="8.5 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #4-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="16 9.8 5.8"
+                            position="16 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #5-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="29 9.8 5.8"
+                            position="29 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #6-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="32 9.8 5.8"
+                            position="32 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #7-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="35.5 9.8 5.8"
+                            position="35.5 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #8-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="43 9.8 5.8"
+                            position="43 9.8 4.470"
                             >
                         </a-circle>
                         <!--light circle #9-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="34 9.8 5.8"
+                            position="34 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #10-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="44 9.8 5.8"
+                            position="44 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle #11-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="54 9.8 5.8"
+                            position="54 9.8 4.470"
                             >
                         </a-circle>
                     <!--light circle Middle Platform-->
@@ -411,90 +411,90 @@
                     <!--light circle #1-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="7 9.8 -4.5"
+                            position="7 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="7 9.8 -4.5" mixin="pointLight" >
+                        <a-entity position="7 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #2-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="13 9.8 -4.5"
+                            position="13 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="13 9.8 -4.5" mixin="pointLight" >
+                        <a-entity position="13 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #3-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="19 9.8 -4.5"
+                            position="19 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="19 9.8 -4.5" mixin="pointLight" >
+                        <a-entity position="19 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                             
                     <!--light circle #4-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="25 9.8 -4.5"
+                            position="25 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="25 9.8 -4.5" mixin="pointLight" >
+                        <a-entity position="25 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #5-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="36 9.8 -5.5"
+                            position="36 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="36 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="36 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #6-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="42 9.8 -5.5"
+                            position="42 9.8 -4.470"
                             >
                         </a-circle> 
-                        <a-entity position="42 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="42 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #7-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="48 9.8 -5.5"
+                            position="48 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="48 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="48 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #8-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="54 9.8 -5.5"
+                            position="54 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="54 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="54 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                         <!--light circle #9-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="60 9.8 -5.5"
+                            position="60 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="60 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="60 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #10-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="66 9.8 -5.5"
+                            position="66 9.8 -4.470"
                             >
                         </a-circle>
-                        <a-entity position="66 9.8 -5.5" mixin="pointLight" >
+                        <a-entity position="66 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #11-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="72 9.8 -5.5"
+                            position="72 9.8 -4.470"
                             >
-                    <a-entity position="72 9.8 -5.5" mixin="pointLight" >
+                    <a-entity position="72 9.8 -4.470" mixin="pointLight" >
                             </a-entity>
                         </a-circle>
                 </a-entity>
@@ -503,42 +503,42 @@
                      <!--light circle #0-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="1 9.8 4.8"
+                            position="1 9.8 4.470"
                             >
                         </a-circle>
-                        <a-entity position="1 9.8 4.8" mixin="pointLight" >
+                        <a-entity position="1 9.8 4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #1-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="7 9.8 4.8"
+                            position="7 9.8 4.470"
                             >
                         </a-circle>
-                        <a-entity position="7 9.8 4.8" mixin="pointLight" >
+                        <a-entity position="7 9.8 4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #2-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="13 9.8 4.8"
+                            position="13 9.8 4.470"
                             >
                         </a-circle>
-                        <a-entity position="13 9.8 4.8" mixin="pointLight" >
+                        <a-entity position="13 9.8 4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #3-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="19 9.8 4.8"
+                            position="19 9.8 4.470"
                             >
                         </a-circle>
-                    <a-entity position="19 9.8 4.8" mixin="pointLight" >
+                    <a-entity position="19 9.8 4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #4-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="25 9.8 4.8"
+                            position="25 9.8 4.470"
                             >
                         </a-circle>
-                    <a-entity position="25 9.8 4.8" mixin="pointLight" >
+                    <a-entity position="25 9.8 4.470" mixin="pointLight" >
                             </a-entity>
                     <!--light circle #5-->
                     <a-circle
