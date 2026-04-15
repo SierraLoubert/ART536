@@ -135,9 +135,9 @@
         <!-- Using the asset management system. Used below-->
     <!--<a-obj-model src="#blackwidow-obj" mtl="#blackwidow-mtl"></a-obj-model>
         <a-obj-model src="#spiderweb-obj" mtl="#spiderweb-mtl"></a-obj-model>
-        <a-obj-model src="#spiderweb2-obj" mtl="#spiderweb2-mtl"></a-obj-model>
-        <a-obj-model src="#emptyjar-obj" mtl="#emptyjar-mtl"></a-obj-model>
-        <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl"></a-obj-model>
+        <a-obj-model src="#spiderweb2-obj" mtl="#spiderweb2-mtl"></a-obj-model>-->
+       <!-- <a-obj-model src="#emptyjar-obj" mtl="#emptyjar-mtl" position="10 3 2" scale="1 1 1"></a-obj-model> -->
+      <!--<a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl"></a-obj-model>-->
 --> 
              <a-light type="ambient" intensity="0.2" shadow></a-light>
              <a-light type="directional" shadow></a-light>
@@ -836,11 +836,11 @@
                 <a-entity>
                <!--Rectaungler Five Box-->
                   <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 1 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
-                  <a-box
+                <!-- <a-box
                     mixin="fivebox secondary"
                     position="28 1 -4.933"
                     >
-                    </a-box>
+                    </a-box> 
                     <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
                     <a-box
                     mixin="fivebox secondary"
@@ -864,7 +864,7 @@
                     mixin="fivebox brown"
                     position="28 5 -4.933"
                     >
-                    </a-box> 
+                    </a-box> -->
                     </a-entity>
                 <a-entity>
                  <!--Rectaungler Platform (3rd Room)-->
@@ -908,13 +908,13 @@
                     mixin="sidewall"
                     ></a-plane>
 
-                     <a-plane id="exrightwall" material="shader:flat; transparent: true; src:#exrightwall; alphaTest: 0.1;"
+                    <a-plane id="exrightwall" material="shader:flat; transparent: true; src:#exrightwall; alphaTest: 0.1;"
                     position="41.130 3 -4.718"
                     mixin="sidewall"
-                    ></a-plane>
+                    ></a-plane> 
 
                 <a-entity id="Room 1"><!--#1 Room-->
-                    <a-plane id="planet" material="shader:flat; transparent: true; src:#planet; alphaTest: 0.1;color:#000;"
+                    <a-plane id="planet" material="shader:flat; transparent: true; src:#planet; alphaTest: 0.1;"
                     position="10.759 3 4.78"
                     rotation="0 -180 0"
                     height="5" width="5" depth="0.1"
@@ -1046,11 +1046,11 @@
                     mixin="textbox"
                     ></a-plane>
 
-                    <a-plane  id="backwall2" material="shader:flat; transparent: true; src:#backwall2;" 
+                  <!--  <a-plane  id="backwall2" material="shader:flat; transparent: true; src:#backwall2;" 
                     position="55.775 3 -0.682"
                     rotation="0 -90 0"
                     height="6" width="8" depth="0.1"
-                    ></a-plane>
+                    ></a-plane>-->
 
                     <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0" scale=".01 .01 .01"></a-gltf-model>
 
