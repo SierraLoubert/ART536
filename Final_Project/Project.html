@@ -39,15 +39,15 @@
 
                 <a-mixin id="door" geometry="primitive: box; width: 4.470; height: 7.824; depth:1.8;"></a-mixin>
 
-                <a-mixin id="squarelightsquareroomone" geometry="primitive: box; width: 2.3; height: 2.3; depth:0.1:" material= "emissive: #b47f56; emissiveIntensity: 1;"></a-mixin>
+                <a-mixin id="squarelightsquareroomone" geometry="primitive: box; width: 2.3; height: 2.3; depth:0.1" material= "emissive: #b47f56; emissiveIntensity: 1;"></a-mixin>
 
-                <a-mixin id="squarelightsquare" geometry="primitive: box; width: 2.3; height: 2.3; depth:0.1:" material= "emissive: #ffffff; emissiveIntensity: 1;"></a-mixin>
+                <a-mixin id="squarelightsquare" geometry="primitive: box; width: 2.3; height: 2.3; depth:0.1" material= "emissive: #ffffff; emissiveIntensity: 1;"></a-mixin>
 
                 <a-mixin id="circlelight" geometry="primitive: cylinder; height: 120; radius: 0" material="emissive: #ffffff; emissiveIntensity: 1;"></a-mixin>
 
                 <a-mixin id="column" geometry="primitive: cylinder; height: 60; radius: 6" shadow></a-mixin>
 
-                <a-mixin id="platform" geometry="primitive: box; width: 2; height: 1; depth:2" shadow></a-mixin>
+                <a-mixin id="platform" geometry="primitive: box; width: 1; height: 2; depth:1" shadow></a-mixin>
 
                 <a-mixin id="fivebox" geometry="primitive: box; width: 2; height: 2; depth:1" shadow></a-mixin>
 
@@ -63,6 +63,8 @@
 
                 <a-mixin id="brown" material="color: #b47f56" emissiveIntensity="2.2"></a-mixin>
                 <a-mixin id="pointLight" color="#6fb2c8" light="type: point; intensity: 1;"></a-mixin>
+               
+                <a-mixin id="textbox" height="1.5" width="3" depth="0.1"></a-mixin>
                 
              <!-- images -->
                <img id="spiderweb" src="../assets/textures/Finalproject/Spiderweb.png" alt="">
@@ -113,7 +115,7 @@
         </a-assets>
 
         <!-- Using the asset management system. Used below-->
-        <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model
+        <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
 
        
 
@@ -300,7 +302,7 @@
                             mixin="circlelight secondary"
                             position="32 9.2 -4.470"
                             >
-                        </a-circle>ondary"
+                        </a-circle>
                     <!--light circle #7-->
                     <a-circle
                             mixin="circlelight secondary"
@@ -838,25 +840,25 @@
                 <a-entity>
                  <!--Rectaungler Platform (3rd Room)-->
                         <a-box
-                        position="80.479 1.035  -0.190"
+                        position="80.479 1.035  -0.011"
                         mixin="platform secondary">
                         </a-box>
 
                     <!--Rectaungler Platform (2nd Room #2)-->
                         <a-box
-                            position="50 1.035  -4.904"
+                            position="50 1.035 -4.346"
                             mixin="platform secondary">
                             </a-box> 
                     <!--Rectaungler Platform (2rd Room #1)-->
                             <a-box
-                            position="38 1.035  -4.904"
+                            position="38 1.035 -4.346"
                             mixin="platform secondary">
                             </a-box> 
 
                     <!--Circle Wall-->
                     <a-cylinder
                         mixin="circlewall primary"
-                        position="41.976 3.97 .229">
+                        position="41.976 2.910 .229">
                 `     </a-cylinder> 
 
                     <a-cylinder 
@@ -884,34 +886,34 @@
                     <a-plane id="whatarespider" material="shader:flat;  src:#whatarespider;"
                     position="10 4 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane id="whatisfear" material="shader:flat;  src:#whatisfear;"
                     position="3 3 -4.718"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="spiderspieces" material="shader:flat;  src:#spiderspieces;" 
                     position="10 5.603 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane id="expience" material="shader:flat;  src:#ryeblue;" 
                     position="-0.830 3 0.458"
                     rotation="0 90 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="specificphobia" material="shader:flat;  src:#specificphobia;" 
                     position="10 7 -4.718"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane id="fearate" material="shader:flat;  src:#fearate;" 
                     position="10 3 -4.718"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
                 </a-entity>
 
@@ -924,30 +926,30 @@
 
                     <a-plane  id="silktext" material="shader:flat;  src:#silktext;" 
                     position="32 5.534 -4.831"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="didyouknow" material="shader:flat;  src:#didyouknow;" 
                     position="23 3 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="remeber" material="shader:flat;  src:#remeber;" 
                     position="23 3 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
 
                     <a-plane  id="pointone" material="shader:flat;  src:#pointone;" 
                     position="38 6 -4.831"
-                    height="2" width="3" depth="0.1"
+                    height="1" width="2" depth="0.1"
                     ></a-plane>
 
                     <a-plane  id="pointtwo" material="shader:flat;  src:#pointtwo;" 
                     position="50  5 -4.831"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="backwall1" material="shader:flat;  src:#backwall1;" 
@@ -983,13 +985,13 @@
                     <a-plane  id="largestspider" material="shader:flat;  src:#largestspider;" 
                     position="75.5 3 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="spiderfacts" material="shader:flat;  src:#spiderfacts;" 
                     position="60 3 4.78"
                     rotation="0 -180 0"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                      <a-plane  id="almosttheir" material="shader:flat;  src:#almosttheir;" 
@@ -1001,7 +1003,7 @@
 
                     <a-plane  id="fearate" material="shader:flat;  src:#ryegold;" 
                     position="76 4 -4.831"
-                    height="3" width="5" depth="0.1"
+                    mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="backwall2" material="shader:flat;  src:#backwall2;" 
@@ -1010,7 +1012,9 @@
                     height="6" width="8" depth="0.1"
                     ></a-plane>
 
-                    <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0" scale=".02 .02 .02"></a-gltf-model>
+                    <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0" scale=".01 .01 .01"></a-gltf-model>
+
+                     <a-gltf-model src="#spider" position="74 3.242 4.70" rotation="-1.330 128.940 0" scale=".02 .02 .02"></a-gltf-model>
 
                 </a-entity>
 
