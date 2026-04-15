@@ -66,7 +66,7 @@
                
                <a-mixin id="textbox" geometry="primitive: plane; width: 5; height: 3" material="shader: flat">
 
-                <a-mixin id="textbox" geometry="primitive: plane; width: 5; height: 3"></a-mixin>
+                a-mixin id="triangle" geometry="primitive: triangle; width: 5; height: 3"></a-mixin>
 </a-mixin>
                 
              <!-- images -->
@@ -199,7 +199,7 @@
                     <!-- Wall S-->
                     <a-box 
                     mixin="smallwall primary"
-                    position="82.592 3 .175"
+                    position="78.38 3 .175"
                     rotation= "0 90 0">
                     </a-box> 
 
@@ -618,10 +618,10 @@
                     <!--light circle Middle Platform-->
                     <a-circle
                             mixin="circlelight secondary"
-                            position="79 4.90  -0.190"
+                            position="76 4.90  -0.190"
                             >
                         </a-circle>
-                        <a-entity position="79 4.90 .236 -1.506" mixin="pointLight">
+                        <a-entity position="76 4.90 .236 -1.506" mixin="pointLight">
                             </a-entity>
                 </a-entity>
                 <a-entity>
@@ -865,7 +865,7 @@
                 <a-entity>
                  <!--Rectaungler Platform (3rd Room)-->
                         <a-box
-                        position="80.479 0.453 -0.011"
+                        position="77.164 0.453 -0.011"
                         mixin="platform secondary">
                         </a-box>
 
@@ -984,7 +984,7 @@
                     ></a-plane>
                     
                     <a-plane  id="gohere" material="shader:flat; transparent: true; src:#gohere; alphaTest: 0.1;" 
-                    position="28.228 2.842 -0.71" 
+                    position="28.228 2.202 -0.283" 
                     rotation="0 90 0"
                     height="4.300" width="6" depth="0.1"
                     ></a-plane>
@@ -1008,7 +1008,7 @@
 
                 <a-entity id="Room 3"><!--#3 Room-->
                     <a-plane  id="largestspider" material="shader:flat; transparent: true; src:#largestspider;" 
-                    position="75.5 3 4.78"
+                    position="73.5 3 4.801"
                     rotation="0 -180 0"
                     mixin="textbox"
                     ></a-plane>
@@ -1020,14 +1020,14 @@
                     ></a-plane>
 
                      <a-plane  id="almosttheir" material="shader:flat; transparent: true; src:#almosttheir;" 
-                    position="82.406 3  -2.439"
+                    position="78.375 3  -2.439"
                     rotation="0 -90 0"
                     height="1" width="3" depth="0.1"
                     ></a-plane>
 
 
                     <a-plane  id="fearate" material="shader:flat; transparent: true; src:#ryegold;" 
-                    position="76 4 -4.831"
+                    position="73.921 3 -4.831"
                     mixin="textbox"
                     ></a-plane>
 
@@ -1039,7 +1039,7 @@
 
                     <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0" scale=".01 .01 .01"></a-gltf-model>
 
-                     <a-gltf-model src="#spider" position="76.28 2.925 4.78" rotation="40.870 -366.710 -276.350" scale=".025 .025 .025"></a-gltf-model>
+                     <a-gltf-model src="#spider" position="73.5 3 4.801" rotation="40.870 -366.710 -276.350" scale=".025 .025 .025"></a-gltf-model>
 
                 </a-entity>
 
