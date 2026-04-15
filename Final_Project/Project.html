@@ -64,7 +64,10 @@
                 <a-mixin id="brown" material="color: #b47f56" emissiveIntensity="2.2"></a-mixin>
                 <a-mixin id="pointLight" color="#6fb2c8" light="type: point; intensity: 1;"></a-mixin>
                
-                <a-mixin id="textbox" height="1.5" width="3" depth="0.1"></a-mixin>
+               <a-mixin id="textbox"
+         geometry="primitive: plane; width: 5; height: 3"
+         material="shader: flat">
+</a-mixin>
                 
              <!-- images -->
                <img id="spiderweb" src="../assets/textures/Finalproject/Spiderweb.png" alt="">
@@ -110,15 +113,28 @@
         </a-assets>
 
         <a-assets id="3D-Online">
-            <a-asset-item id="crate-obj" src="ww"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="crate.mtl"></a-asset-item>
+            <a-asset-item id="blackwidow-obj" src="../assets/3D/3D_Black_Spider/black_widow.obj"></a-asset-item>
+            <a-asset-item id="blackwidow-mtl" src="../assets/3D/3D_Black_Spider/black_widow.mtl"></a-asset-item>
+            <a-asset-item id="spiderweb-obj" src="../assets/3D/3D_Spider_Web/SpiderWeb.obj"></a-asset-item>
+            <a-asset-item id="spiderweb-mtl" src="../assets/3D/3D_Spider_Web/SpiderWeb.mtl"></a-asset-item>
+            <a-asset-item id="spiderweb2-obj" src="../assets/3D/3D_Spider_Web2/SpiderWeb.obj"></a-asset-item>
+            <a-asset-item id="spiderweb2-mtl" src="../assets/3D/3D_Spider_Web2/SpiderWeb.mtl"></a-asset-item>
+            <a-asset-item id="emptyjar-obj" src="../assets/3D/Empty_Jar/EmptyJar.obj"></a-asset-item>
+            <a-asset-item id="emptyjar-mtl" src="../assets/3D/Empty_Jar/EmptyJar.mtl"></a-asset-item>
+            <a-asset-item id="cube_open-obj" src="../assets/3D/Open_Cube/cube_open.obj"></a-asset-item>
+            <a-asset-item id="cube_open-mtl" src="../assets/3D/Open_Cube/cube_open.mtl"></a-asset-item>
+            <!--backup for Cube open-->
+            <a-asset-item id="emptyjar-obj" src="../assets/3D/Glass_Tower/four_tier_glass_tower_display_case_1373.obj"></a-asset-item>
+            <a-asset-item id="emptyjar-mtl" src="../assets/3D/Glass_Tower/four_tier_glass_tower_display_case_1373.mtl"></a-asset-item>
         </a-assets>
 
         <!-- Using the asset management system. Used below-->
-        <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
-
-       
-
+    <!--<a-obj-model src="#blackwidow-obj" mtl="#blackwidow-mtl"></a-obj-model>
+        <a-obj-model src="#spiderweb-obj" mtl="#spiderweb-mtl"></a-obj-model>
+        <a-obj-model src="#spiderweb2-obj" mtl="#spiderweb2-mtl"></a-obj-model>
+        <a-obj-model src="#emptyjar-obj" mtl="#emptyjar-mtl"></a-obj-model>
+        <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl"></a-obj-model>
+--> 
              <a-light type="ambient" intensity="0.2" shadow></a-light>
              <a-light type="directional" shadow></a-light>
 
@@ -815,23 +831,32 @@
                 </a-entity>
                 <a-entity>
                <!--Rectaungler Five Box-->
+                  <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 1 -4.933" scale="0.01"></a-obj-model>
                   <a-box
                     mixin="fivebox secondary"
                     position="28 1 -4.933"
                     >
-                    </a-box><a-box
+                    </a-box>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.01"></a-obj-model>
+                    <a-box
                     mixin="fivebox secondary"
                     position="28 2 -4.933"
                     >
-                    </a-box><a-box
+                    </a-box>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 3 -4.933" scale="0.01"></a-obj-model>
+                    <a-box
                     mixin="fivebox brown"
                     position="28 3 -4.933"
                     >
-                    </a-box><a-box
+                    </a-box>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 4 -4.933" scale="0.01"></a-obj-model>
+                    <a-box
                     mixin="fivebox brown"
                     position="28 4 -4.933"
                     >
-                    </a-box><a-box
+                    </a-box>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 5 -4.933" scale="0.01"></a-obj-model>
+                    <a-box
                     mixin="fivebox brown"
                     position="28 5 -4.933"
                     >
@@ -895,19 +920,19 @@
                     ></a-plane>
 
                     <a-plane  id="spiderspieces" material="shader:flat;  src:#spiderspieces;" 
-                    position="10 5.603 4.78"
+                    position="10 3.6 4.78"
                     rotation="0 -180 0"
                     mixin="textbox"
                     ></a-plane>
 
                     <a-plane id="expience" material="shader:flat;  src:#ryeblue;" 
-                    position="-0.830 3 0.458"
+                    position="-0.830 2.6 0.458"
                     rotation="0 90 0"
                     mixin="textbox"
                     ></a-plane>
 
                     <a-plane  id="specificphobia" material="shader:flat;  src:#specificphobia;" 
-                    position="10 7 -4.718"
+                    position="10 3 -4.718"
                     mixin="textbox"
                     ></a-plane>
 
@@ -919,13 +944,13 @@
 
                 <a-entity id="Room 2"><!--#2 Room-->
                     <a-plane  id="spidersizes" material="shader:flat;  src:#spidersizes;" 
-                    position="44 5.534 -4.831"
+                    position="44 3 -4.831"
                     height="3" width="5" depth="0.1"
                     ></a-plane>
 
 
                     <a-plane  id="silktext" material="shader:flat;  src:#silktext;" 
-                    position="32 5.534 -4.831"
+                    position="32 3 -4.831"
                     mixin="textbox"
                     ></a-plane>
 
@@ -943,12 +968,12 @@
 
 
                     <a-plane  id="pointone" material="shader:flat;  src:#pointone;" 
-                    position="38 6 -4.831"
+                    position="38 5 -4.831"
                     height="1" width="2" depth="0.1"
                     ></a-plane>
 
                     <a-plane  id="pointtwo" material="shader:flat;  src:#pointtwo;" 
-                    position="50  5 -4.831"
+                    position="50  4 -4.831"
                     mixin="textbox"
                     ></a-plane>
 
@@ -959,7 +984,7 @@
                     ></a-plane>
                     
                     <a-plane  id="gohere" material="shader:flat;  src:#gohere;" 
-                    position="28.228 5 -2" 
+                    position="28.228 4 -2" 
                     rotation="0 90 0"
                     height="5.57" width="7.19" depth="0.1"
                     ></a-plane>
@@ -995,7 +1020,7 @@
                     ></a-plane>
 
                      <a-plane  id="almosttheir" material="shader:flat;  src:#almosttheir;" 
-                    position="82.406 6.954  -2.439"
+                    position="82.406 3  -2.439"
                     rotation="0 -90 0"
                     height="1" width="3" depth="0.1"
                     ></a-plane>
@@ -1007,7 +1032,7 @@
                     ></a-plane>
 
                     <a-plane  id="backwall2" material="shader:flat;  src:#backwall2;" 
-                    position="55.775 4.125 -0.682"
+                    position="55.775 3 -0.682"
                     rotation="0 -90 0"
                     height="6" width="8" depth="0.1"
                     ></a-plane>
