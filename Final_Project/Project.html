@@ -47,7 +47,7 @@
 
                 <a-mixin id="column" geometry="primitive: cylinder; height: 60; radius: 6" shadow></a-mixin>
 
-                <a-mixin id="platform" geometry="primitive: box; width: 0.6; height: .6; depth:1.2" shadow></a-mixin>
+                <a-mixin id="platform" geometry="primitive: box; width: 0.6; height: .8; depth:.6" shadow></a-mixin>
 
                 <a-mixin id="fivebox" geometry="primitive: box; width: 2; height: 2; depth:1" shadow></a-mixin>
 
@@ -831,19 +831,19 @@
                 </a-entity>
                 <a-entity>
                <!--Rectaungler Five Box-->
-                  <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 1 -4.933" scale="0.01"></a-obj-model>
+                  <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 1 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
                   <a-box
                     mixin="fivebox secondary"
                     position="28 1 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
                     <a-box
                     mixin="fivebox secondary"
                     position="28 2 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 3 -4.933" scale="0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 3 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
                     <a-box
                     mixin="fivebox brown"
                     position="28 3 -4.933"
@@ -855,7 +855,7 @@
                     position="28 4 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 5 -4.933" scale="0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 5 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
                     <a-box
                     mixin="fivebox brown"
                     position="28 5 -4.933"
@@ -865,18 +865,18 @@
                 <a-entity>
                  <!--Rectaungler Platform (3rd Room)-->
                         <a-box
-                        position="80.479 1.035  -0.011"
+                        position="80.479 0.453 -0.011"
                         mixin="platform secondary">
                         </a-box>
 
                     <!--Rectaungler Platform (2nd Room #2)-->
                         <a-box
-                            position="50 1.035 -4.346"
+                            position="50 0.453 -4.346"
                             mixin="platform secondary">
                             </a-box> 
                     <!--Rectaungler Platform (2rd Room #1)-->
                             <a-box
-                            position="38 1.035 -4.346"
+                            position="38 0.453 -4.346"
                             mixin="platform secondary">
                             </a-box> 
 
@@ -984,7 +984,7 @@
                     ></a-plane>
                     
                     <a-plane  id="gohere" material="shader:flat; transparent: true; src:#gohere; alphaTest: 0.1;" 
-                    position="28.228 4 -2" 
+                    position="28.228 2.842 -0.71" 
                     rotation="0 90 0"
                     height="5.57" width="7.19" depth="0.1"
                     ></a-plane>
