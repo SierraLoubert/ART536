@@ -63,12 +63,13 @@
 
             <a-mixin id="white" material="color: #ffffff" shadow></a-mixin>
 
-
-
             <a-mixin id="brown" material="color: #b47f56" emissiveIntensity="2.2"></a-mixin>
+
             <a-mixin id="pointLight" color="#6fb2c8" light="type: point; intensity: 0.5;"></a-mixin>
 
             <a-mixin id="textbox" geometry="primitive: plane; width: 5; height: 3" material="shader: flat"></a-mixin>
+
+            <a-mixin id="normalscale" material="scale=0.1 0.1 0.1></a-mixin>
 
             <!-- images -->
             <img id="didyouknow" src="../assets/textures/Finalproject/Didyouknow@2x.png" alt="">
@@ -464,35 +465,35 @@
                 </a-circle>
                 <a-entity position="28.557 5.90 -4.294" mixin="pointLight">
                 </a-entity>
-                <!-- <a-box
+              <a-box
                     mixin="fivebox secondary"
                     position="28 1 -4.933"
                     >
                     </a-box> 
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" mixin="normalscale"></a-obj-model>
                     <a-box
                     mixin="fivebox secondary"
                     position="28 2 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 3 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 3 -4.933" scale="0.1 0.1 0.1"></a-obj-model>
                     <a-box
                     mixin="fivebox brown"
                     position="28 3 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 4 -4.933" scale="0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 4 -4.933" scale="0.1 0.1 0.1"></a-obj-model>
                     <a-box
                     mixin="fivebox brown"
                     position="28 4 -4.933"
                     >
                     </a-box>
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 5 -4.933" scale="0.01 0.01 0.01"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 5 -4.933" scale="0.1 0.1 0.1"></a-obj-model>
                     <a-box
                     mixin="fivebox brown"
                     position="28 5 -4.933"
                     >
-                    </a-box> -->
+                    </a-box> 
             </a-entity>
             <a-entity>
                 <!--Rectaungler Platform (3rd Room)-->
