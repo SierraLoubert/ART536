@@ -67,7 +67,7 @@
 
             <a-mixin id="pointLight" color="#6fb2c8" light="type: point; intensity: 0.5;"></a-mixin>
 
-            <a-mixin id="textbox" geometry="primitive: plane; width: 5; height: 3" material="shader: flat"></a-mixin>
+            <a-mixin id="textbox" geometry="primitive: plane; width: 2.490; height: 6.770" material="shader: flat"></a-mixin>
 
             <a-mixin id="normalscale" material="scale=0.1 0.1 0.1></a-mixin>
 
@@ -457,20 +457,20 @@
                 </a-box>
             </a-entity>
             <a-entity>
-                <!--Rectaungler Five Box-->
-                <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28.557 0.580 -4.294" rotation="0 0 -90"
-                    scale="0.03 0.03 0.03"></a-obj-model>
-                <!--light circle #0-->
+                   <!--light circle #0-->
                 <a-circle mixin="circlelight secondary" position="28.557 5.90 -4.294">
                 </a-circle>
                 <a-entity position="28.557 5.90 -4.294" mixin="pointLight">
                 </a-entity>
+                <!--Rectaungler Five Box-->
+                <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28.557 0.580 -4.294" rotation="0 0 -90"
+                    scale="0.03 0.03 0.03"></a-obj-model>
               <a-box
                     mixin="fivebox secondary"
                     position="28 1 -4.933"
                     >
                     </a-box> 
-                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" mixin="normalscale"></a-obj-model>
+                    <a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl" position="28 2 -4.933" scale="0.03 0.03 0.03"></a-obj-model>
                     <a-box
                     mixin="fivebox secondary"
                     position="28 2 -4.933"
@@ -519,10 +519,10 @@
             <a-plane id="exleftwall" material="shader:flat; transparent: true; src:#exleftwall; alphaTest: 0.1;"
                 position="41.130 3 4.78" rotation="0 -180 0" mixin="sidewall"></a-plane>
 
-            <!-- <a-plane id="exrightwall" material="shader:flat; transparent: true; src:#exrightwall; alphaTest: 0.1;"
+          <!--<a-plane id="exrightwall" material="shader:flat; transparent: true; src:#exrightwall; alphaTest: 0.1;"
                     position="41.130 3 -4.718"
                     mixin="sidewall"
-                    ></a-plane> -->
+                    ></a-plane>-->
 
             <a-entity id="Room1"><!--#1 Room-->
                 <a-plane id="planet" material="shader:flat; transparent: true; src:#planet; alphaTest: 0.1;"
@@ -535,8 +535,11 @@
                     material="shader:flat; transparent: true; src:#whatarespider; alphaTest: 0.1;" position="10 4 4.78"
                     rotation="0 -180 0" mixin="textbox"></a-plane>
 
-                <a-plane id="whatisfear" material="shader:flat; transparent: true; src:#whatisfear; alphaTest: 0.1;"
-                    position="10 3.602 -4.718" mixin="textbox"></a-plane>
+                <a-plane id="whatisfear" material="shader:flat; transparent: true; src:#whatzzisfear; alphaTest: 0.1;"
+                    position="13.783 4.303 -4.735" height="2.350" width="8.120"></a-plane>
+
+                <a-plane id="arachnophobia" material="shader:flat; transparent: true; src:#arachnophobia;"
+                position="4.877 4.009 -4.587" height="2.490" width="6.770"></a-plane>
 
                 <a-plane id="spiderspieces"
                     material="shader:flat; transparent: true; src:#spiderspieces; alphaTest: 0.1;"
@@ -546,20 +549,20 @@
                     position="-0.830 2.6 0.458" rotation="0 90 0" mixin="textbox"></a-plane>
 
                 <a-plane id="specificphobia" material="shader:flat; transparent: true; src:#specificphobia;"
-                    position="3 3 -4.718" mixin="textbox"></a-plane>
+                    position="23.070 3.907 -4.718" height="2.490" width="6.770"></a-plane>
 
                 <a-plane id="fearate" material="shader:flat; transparent: true; src:#fearate; alphaTest: 0.1;"
-                    position="10 1.5 -4.718" height="1.5" width="3.8" depth="0.1"></a-plane>
+                    position="13.783 1.929 -4.735" height="2.430" width="7.790" depth="0.1"></a-plane>
             </a-entity>
 
             <a-entity id="Room2"><!--#2 Room-->
                 <a-plane id="spidersizes"
                     material="shader:flat; transparent: true; src:#spidersizes; alphaTest: 0.1; alphaTest: 0.1;"
-                    position="44 3 -4.831" height="3" width="5" depth="0.1"></a-plane>
+                    position="44.221 3.359 -4.831" height="4.34" width="5.57" depth="0.1"></a-plane>
 
 
                 <a-plane id="silktext" material="shader:flat; transparent: true; src:#silktext; alphaTest: 0.1;"
-                    position="33.787 3 -4.831" mixin="textbox"></a-plane>
+                    position="31.772 4.181 -4.831" height="2.1" width="5.940" depth="0.1"></a-plane>
 
                 <a-plane id="didyouknow" material="shader:flat; transparent: true; src:#didyouknow; alphaTest: 0.1;"
                     position="23 3 4.78" rotation="0 -180 0" mixin="textbox"></a-plane>
@@ -569,10 +572,10 @@
 
 
                 <a-plane id="pointone" material="shader:flat; transparent: true; src:#pointone; alphaTest: 0.1;"
-                    position="38 5 -4.831" height="1" width="2" depth="0.1"></a-plane>
+                    position="39.266 2.885 -4.701" height="2.980" width="5.180" depth="0.1"></a-plane>
 
                 <a-plane id="pointtwo" material="shader:flat; transparent: true; src:#pointtwo; alphaTest: 0.1;"
-                    position="50  4 -4.831" mixin="textbox"></a-plane>
+                    position="50  4 -4.831" mixin="textbox"></a-plane> <!--pointtwo is missing-->
 
                 <a-plane id="backwall1" material="shader:flat; transparent: true; src:#backwall1; alphaTest: 0.1;"
                     position="27.261 3.235 -1.875" rotation="0 -90 0" height="3" width="4" depth="0.1"></a-plane>
@@ -609,7 +612,7 @@
 
 
                 <a-plane id="ryegold" material="shader:flat; transparent: true; src:#ryegold;"
-                    position="73.921 3 -4.831" mixin="textbox"></a-plane>
+                    position="75.856 3.309 -4.831" height="2.020" width="14.24" depth="0.1"></a-plane>
 
                 <!--  <a-plane  id="backwall2" material="shader:flat; transparent: true; src:#backwall2;" 
                     position="55.775 3 -0.682"
