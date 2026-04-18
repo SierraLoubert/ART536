@@ -109,6 +109,7 @@
             <img id="specificphobia" src="../assets/textures/Finalproject/SpecificPhobia@2x.png" alt="">
             <img id="frontwall" src="../assets/textures/Finalproject/frontwall1@2x.png" alt="">
             <img id="silkwebspider" src="../assets/textures/Finalproject/Silkwebspider.png" alt="">
+            <img id="centralwall" src="../assets/textures/Finalproject/Center Wall@2x.png" alt="">
             <img id="exrightwall" src="../assets/textures/Finalproject/Right Wall@2x.png" alt="">
             <img id="exleftwall" src="../assets/textures/Finalproject/Left Wall@2x.png" alt="">
 
@@ -511,13 +512,13 @@
                 <a-cylinder mixin="circlewall primary" position="41.976 2.910 .229">
                 </a-cylinder>
 
-                <a-cylinder src="#centralwall" radius="3" height="2" open-ended="true" theta-start="0"
-                    theta-length="120" position="41.976 3.97 .229" rotation="0 0 0">
+                <a-cylinder src="#centralwall" radius="3" height="2" open-ended="true" theta-start="0" 
+                    theta-length="120" material="shader:flat; transparent: true; src:#exleftwall; alphaTest: 0.1;" position="41.976 3.97 .229" rotation="0 0 0">
                 </a-cylinder>
             </a-entity>
 
             <a-plane id="exleftwall" material="shader:flat; transparent: true; src:#exleftwall; alphaTest: 0.1;"
-                position="41.130 3 4.78" rotation="0 0 0" mixin="sidewall"></a-plane>
+                position="41.130 3 4.78"  mixin="sidewall"></a-plane>
 
           <!--<a-plane id="exrightwall" material="shader:flat; transparent: true; src:#exrightwall; alphaTest: 0.1;"
                     position="41.130 3 -4.718"
