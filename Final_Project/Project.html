@@ -142,7 +142,6 @@
         <a-obj-model src="#blackwidow-obj" mtl="#blackwidow-mtl" position="39.2601.049 0.017" rotation= "0 -80 0" scale="0.2 0.2 0.2">></a-obj-model>
         <a-obj-model src="#spiderweb-obj" mtl="#spiderweb-mtl" position="22.038 3.079 -3.706" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
         <a-obj-model src="#spiderweb2-obj" mtl="#spiderweb2-mtl" position="77.164 0.453 5" scale="1 1 1"></a-obj-model>
-        <!-- <a-obj-model src="#emptyjar-obj" mtl="#emptyjar-mtl" position="38 0.453 -4.346" scale="1 1 1"></a-obj-model> -->
         <!--<a-obj-model src="#cube_open-obj" mtl="#cube_open-mtl"></a-obj-model>-->
         <a-light type="ambient" intensity="0.3" shadow></a-light>
         <a-light type="directional" shadow></a-light>
@@ -505,7 +504,7 @@
                 <a-box position="50 0.453 -4.346" mixin="platform secondary">
                 </a-box>
                 <!--Rectaungler Platform (2rd Room #1)-->
-                <a-box position="38 0.453 -4.346" mixin="platform secondary">
+                <a-box position="40 0.453 -4.346" mixin="platform secondary">
                 </a-box>
 
                 <!--Circle Wall-->
@@ -584,6 +583,12 @@
                 <a-plane id="frontwall" material="shader:flat; transparent: true; src:#frontwall; alphaTest: 0.1;"
                     position="28.228 2.202 -0.283" rotation="0 90 0" height="4.300" width="6" depth="0.1"></a-plane>
 
+                <a-plane id="silkwebspider" material="shader:flat; transparent: true; src:#frontwall; alphaTest: 0.1;"
+                    position="40 0.453 -4.346"  rotation="0 90 0" height="4.300" width="6" depth="0.1"></a-plane>
+                
+                <a-obj-model src="#emptyjar-obj" mtl="#emptyjar-mtl" position="40 0.453 -4.346" scale=".40 .40 .40"></a-obj-model>
+
+                    
                 <a-gltf-model src="#spider" position="42 3 2.221" rotation="45 0 90" scale=".02 .02 .02"></a-gltf-model>
 
                 <a-gltf-model src="#map-middle-dot" position="46.435 1.926 0.070" rotation="90 -90 0" scale=".02 .02 .02"></a-gltf-model>
@@ -615,11 +620,11 @@
                 <a-plane id="ryegold" material="shader:flat; transparent: true; src:#ryegold;"
                     position="70.686 3.309 -4.831" height="2.020" width="14.24" depth="0.1"></a-plane>
 
-                <!--  <a-plane  id="backwall2" material="shader:flat; transparent: true; src:#backwall2;" 
+                <a-plane  id="backwall2" material="shader:flat; transparent: true; src:#backwall2;" 
                     position="55.775 3 -0.682"
                     rotation="0 -90 0"
                     height="6" width="8" depth="0.1"
-                    ></a-plane>-->
+                    ></a-plane>
 
                 <a-gltf-model src="#spider" position="74 3.242 -4.30" rotation="-1.330 128.940 0"
                     scale=".01 .01 .01"></a-gltf-model>
