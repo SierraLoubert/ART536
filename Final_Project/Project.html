@@ -280,7 +280,7 @@
                 src="../assets/3D/Glass_Tower/four_tier_glass_tower_display_case_1373.mtl"></a-asset-item> 
 
                 <!--video for third room-->
-            <video id="spidervideo" src="../assets/videos/spidervideo.mp4" autoplay loop="true" crossorigin="anonymous"></video>
+            <video id="spidervideo" src="../assets/videos/spidervideo.mp4" autoplay muted playsinline webkit-playsinline loop="true" preload="auto" crossorigin="anonymous"></video>
 
         </a-assets> 
 
@@ -1254,15 +1254,15 @@
 
                         <a-obj-model src="#spiderweb-obj" mtl="#spiderweb-mtl" mixin="white" position="50.600 4.819 -4.286" rotation= "47.350 -180.820 -97.260" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-plane id="silkwebspider-plane" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
+                        <a-plane id="silkwebspider" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
 
                         position="54.273 5 -1.049" height="1" width=".1" depth="0.1" rotation="0 -90 0"></a-plane> 
 
-                        <a-plane id="silkwebspider-plane" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
+                        <a-plane id="silkwebspider" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
 
                         position="52.503 5 0.724" height="1" width=".1" depth="0.1" rotation="0 -45 0"></a-plane> 
 
-                        <a-plane id="silkwebspider-plane" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
+                        <a-plane id="silkwebspider" material="shader:flat; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
 
                         position="50.537 5 -1.130" height="1" width=".1" depth="0.1" rotation="0 -90 0"></a-plane> 
 
@@ -1310,7 +1310,8 @@
 
                             ></a-plane> 
 
-                        <a-plane src="#spidervideo" position="59.525 2.977 -4.831" width="4" height="2.5" autoplay loop="true"></a-plane>
+                        <a-plane material="shader: flat; src: #spidervideo" position="59.525 2.977 -4.831" width="4" height="2.5"></a-plane>
+                        <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
 
 
                         <a-gltf-model src="#spider" position="65.089 2.075 -4.30" rotation="-1.330 128.940 0" 
@@ -1371,6 +1372,25 @@
 
   
 
+        <script>
+            (function () {
+                var video = document.getElementById('spidervideo');
+                if (!video) return;
+
+                var tryPlay = function () {
+                    var playPromise = video.play();
+                    if (playPromise && typeof playPromise.catch === 'function') {
+                        playPromise.catch(function () {
+                            // Browser may still require an explicit user gesture.
+                        });
+                    }
+                };
+
+                document.addEventListener('click', tryPlay, { once: true });
+                document.addEventListener('touchstart', tryPlay, { once: true });
+                window.addEventListener('load', tryPlay);
+            })();
+        </script>
 </body> 
 
   
