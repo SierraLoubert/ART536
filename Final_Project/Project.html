@@ -116,23 +116,6 @@
             <a-mixin id="map" geometry="primitive: box; width: 1.960; height: .001; depth:0.6"></a-mixin> 
 
   
-            <!--regular-->
-            <!--<a-mixin id="primary" material="color: #103351" shadow></a-mixin> 
-
-  
-
-            <a-mixin id="secondary" material="color: #c89332" shadow></a-mixin> 
-
-  
-
-            <a-mixin id="white" material="color: #ffffff" shadow></a-mixin> 
-
-  
-
-            <a-mixin id="brown" material="color: #b47f56" emissiveIntensity="2.2"></a-mixin> --> 
-
-
-            <!--brown-->
 
            <a-mixin id="primary" material="color: #6B4A2E" shadow></a-mixin> 
 
@@ -285,8 +268,6 @@
 
             <a-asset-item id="spiderweb2-obj" src="../assets/3D/3D_Spider_Web_2/Spider_Web.obj"></a-asset-item> 
 
-            <a-asset-item id="spiderweb2-mtl" src="../assets/3D/3D_Spider_Web_2/Spider_Web.mtl"></a-asset-item> 
-
         
            <img src="../assets/3D/3D_Spider_Web/SpiderWeb2/spider_web_Mat_baseColor.png" id="spiderweb2" alt="">
             <img src="../assets/3D/3D_Spider_Web/SpiderWeb2/spider_web_Mat_normal.png" id="spiderweb2Nm">
@@ -302,8 +283,6 @@
 
 
             <a-asset-item id="cube_open-obj" src="../assets/3D/Open_Cube/cube_open.obj"></a-asset-item> 
-
-            <a-asset-item id="cube_open-mtl" src="../assets/3D/Open_Cube/cube_open.mtl"  materials="color:#FAF7F0"></a-asset-item> 
 
     
 
@@ -330,7 +309,7 @@
   scale="0.2 0.2 0.2">
 </a-obj-model>
 
-        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 3.079 -3.706" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+        <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 3.079 -3.706" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
         <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" position="77.164 0.453 5" scale="1 1 1"></a-obj-model> 
 
@@ -1295,7 +1274,7 @@
 
                         <a-gltf-model src="#map-middle-dot" position="43.660 2.650 -0.306" rotation="2.01 -119.97 -3.18" scale=".009 .008 .008"></a-gltf-model> 
 
-                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" mtl="#spiderweb-mtl" mixin="white" position="50.600 4.819 -4.286" rotation= "47.350 -180.820 -97.260" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" material="color: #FAF7F0"  mixin="white" position="50.600 4.819 -4.286" rotation= "47.350 -180.820 -97.260" scale="0.02 0.02 0.02"></a-obj-model> 
 
                         <a-plane id="silkwebspider" material="shader:standard; transparent: true; src:#silkwebspider; alphaTest: 0.1;" 
 
@@ -1375,19 +1354,19 @@
                         
                           <a-obj-model src="#crate-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="77.164 1.271 -0.011" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
 
-                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" mtl="#spiderweb-mtl" mixin="white" position="50.600 5.282 -4.286" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" material="color: #FAF7F0"  mixin="white" position="50.600 5.282 -4.286" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" mtl="#spiderweb-mtl" mixin="white" position="56.297 5.833 -4.286" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" material="color: #FAF7F0"  mixin="white" position="56.297 5.833 -4.286" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" mtl="#spiderweb2-mtl" mixin="white" position="79.186 5.542 -4.930" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #FAF7F0"  mixin="white" position="79.186 5.542 -4.930" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" mtl="#spiderweb2-mtl" mixin="white" position="79.353 5.263 4.327" rotation= "45 45 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #FAF7F0"  mixin="white" position="79.353 5.263 4.327" rotation= "45 45 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
                         <a-gltf-model src="#spider" position="79.353 5.263 4.327" rotation="-1.330 128.940 0" 
                             scale=".001 .001 .001"></a-gltf-model> 
 
 
-                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" mtl="#spiderweb2-mtl" mixin="white" position="77.214 0.008 -0.754" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #FAF7F0"  mixin="white" position="77.214 0.008 -0.754" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
 
                         
