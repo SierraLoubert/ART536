@@ -149,6 +149,8 @@
 
             <img id="didyouknow" src="../assets/textures/Finalproject/Didyouknow@3x.png" alt=""> 
 
+            <img id="YOUMADEIT" src="../assets/textures/Finalproject/YOUMADEIT@3x.png" alt=""> 
+
             <img id="spiderweb" src="../assets/textures/Finalproject/Spiderweb@3x.png" alt=""> 
 
             <img id="spiderweb2" src="../assets/textures/Finalproject/Spiderweb2@3x.png" alt=""> 
@@ -250,11 +252,11 @@
         <a-assets id="3D-Online"> 
 
              <a-assets>
-            <a-asset-item id="crate-obj" src="sp/black_widow.obj"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="sp/black_widow.mtl"></a-asset-item>
-            <img src="sp/black_widow/black_widow_Mat_baseColor.png" id="spider" alt="">
-            <img src="sp/black_widow/black_widow_Mat_normal.png" id="spiderNm">
-            <img src="sp/black_widow/black_widow_Mat_roughness.png" id="spiderRm" alt="">
+            <a-asset-item id="blackwidow-obj" src="../assets/3D/sp/black_widow.obj"></a-asset-item>
+            <a-asset-item id="blackwidow-mtl" src="../assets/3D/sp/black_widow.mtl"></a-asset-item>
+            <img src="../assets/3D/sp/black_widow/black_widow_Mat_baseColor.png" id="spiderTexture" alt="">
+            <img src="../assets/3D/sp/black_widow/black_widow_Mat_normal.png" id="spiderNm">
+            <img src="../assets/3D/sp/black_widow/black_widow_Mat_roughness.png" id="spiderRm" alt="">
         </a-assets>
 
            
@@ -1047,6 +1049,11 @@
 
                 </a-box> 
 
+                <a-cylinder radius="1.71" height="2" open-ended="true" theta-start="231.540" theta-length="360" material="shader:standard; transparent: true; src:#YOUMADEIT; alphaTest: 0.1;" position="77.164 0.665 -0.011"> 
+
+                </a-cylinder> 
+
+
   
 
                 <!--Rectaungler Platform (2nd Room #2)--> 
@@ -1260,7 +1267,7 @@
 
                         
 
-                        <a-obj-model src="#emptyjar-obj" position="38.466 1.284 -4.346" scale=".02 .02 .02"></a-obj-model> 
+                        <a-obj-model src="#emptyjar-obj" position="38.466 1.270 -4.346" scale=".02 .02 .02"></a-obj-model> 
 
     
 
@@ -1317,7 +1324,7 @@
 
                         <a-plane id="ryeblue" material="shader:standard; transparent: true; src:#ryeblue;" 
 
-                            position="70.686 3.309 -4.831" height="2.020" width="14.24" depth="0.1"></a-plane> 
+                            position="70.686 3.309 -4.831" height="2.020" width="8.780" depth="0.1"></a-plane> 
 
         
 
@@ -1351,7 +1358,7 @@
 
                         
                         
-                          <a-obj-model src="#crate-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="77.164 1.271 -0.011" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
+                          <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="77.164 1.271 -0.011" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
 
                         <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" material="color: #FAF7F0"  mixin="white" position="50.600 5.282 -4.286" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
