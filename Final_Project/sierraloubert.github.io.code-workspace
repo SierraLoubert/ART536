@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../Downloads/sandbox-spider"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sierraloubert.github.io"
+	}
+}
