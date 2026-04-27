@@ -129,6 +129,8 @@
 
             <a-mixin id="brown" material="color: #3A2F2A" emissiveIntensity="2.2"></a-mixin>  
 
+            <a-mixin id="black" material="color: #0e0e0e" emissiveIntensity="2.2"></a-mixin>  
+
   
 
             <a-mixin id="pointLight" color="#FAF7F0" light="type: point; intensity: 0.5;"></a-mixin> 
@@ -985,17 +987,17 @@
 
                       <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 2.170 -3.586" rotation="90 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 1.902 -3.586" rotation="0 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.821 2.507 -3.586" rotation="180 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
                     <a-obj-model mixin="cube" src="#cube_open-obj" material="color: #FAF7F0"  position="28.140 2.791 -3.686" rotation="0 0 -90" shadow="" material="color: #FAF7F0"></a-obj-model>
 
                     <a-obj-model mixin="cube" src="#cube_open-obj" material="color: #FAF7F0"  position="28.140 2.791 -3.686" rotation="0 0 -90" ></a-obj-model> 
 
-                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 2.600 -3.586" rotation="180.000 45 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.821 3.120 -3.473" rotation="180.000 45 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 2.600 -3.586" rotation="180 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.821 3.120 -3.782" rotation="180 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 2.600 -3.586" rotation="180.000 -45 0" scale="0.01 0.01 0.01"></a-obj-model> 
+                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.821 3.120 -3.644" rotation="180.000 -45 0" scale="0.01 0.01 0.01"></a-obj-model> 
 
             </a-entity> 
 
@@ -1205,7 +1207,7 @@
 
                     position="55.460 5.558 -4.568" rotation="6.610 -23.09 -4.568" height=".820" width="1.09" depth="0.1"></a-plane>
 
-                     <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="50 1.278 -4.346" rotation="0 -80 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                     <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="50 1.265 -4.346" rotation="0 -80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
 
                     <a-plane id="spidersizes" 
@@ -1355,7 +1357,7 @@
 
                         <a-cylinder mixin="secondary" height=".025" 
                         radius=".5" 
-                        rotation="90 0 0" position="62.474 2.075 -4.809"></a-cylinder>
+                        rotation="90 0 0" position="62.474 2.128 -4.809"></a-cylinder>
 
                          <a-sound 
                             src="#spidervideoaudio"
@@ -1367,9 +1369,11 @@
 
                         <a-cylinder mixin="secondary" height=".025" 
                         radius=".5" 
-                        rotation="90 0 0" position="62.474 3.888 -4.809"></a-cylinder>
+                        rotation="90 0 0" position="62.474 3.687 -4.809"></a-cylinder>
 
-                        <a-gltf-model src="#spider" position="65.089 2.075 -4.30" rotation="-1.330 128.940 0" 
+                        <a-plane mixin="black" position="62.448 2.977 -4.837" width="1.110" height="2.750"></a-plane>
+
+                        <a-gltf-model src="#spider" position="65.089 2.075 -4.834" rotation="-1.330 128.940 0" 
 
                             scale=".001 .001 .001"></a-gltf-model> 
 
@@ -1409,7 +1413,7 @@
                         <a-gltf-model src="#spider" position="76.353 5.263 4.327" rotation="-1.330 128.940 0" 
                             scale=".001 .001 .001"></a-gltf-model> 
 
-                         
+                        <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="56.401 5.214 -4.268" rotation="47.570 90 0" scale="0.001 0.001 0.001"></a-obj-model> 
 
 
                         <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #FAF7F0"  mixin="white" position="77.214 0.008 -0.754" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
@@ -1439,7 +1443,7 @@
 
                           <a-gltf-model src="#spiderstring"   
 
-                        position="74 5 3" scale=".001 .001 .001" 0 rotation="0 -90 0"></a-gltf-model> 
+                        position="74 5 3" scale=".001 .001 .001"  rotation="0 -90 0"></a-gltf-model> 
 
                          <a-gltf-model src="#spiderstring" 
 
