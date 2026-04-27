@@ -119,7 +119,7 @@
 
   
 
-            <a-mixin id="secondary" material="color: #8A867C" shadow></a-mixin> 
+            <a-mixin id="secondary" material="color: #d3a12a" shadow></a-mixin> 
 
   
 
@@ -357,7 +357,7 @@
 
                 <!-- Room Floor--> 
 
-                <a-box mixin="floor primary" position="40.297 0 0" rotation="90 0 0" static-body="shape: box" 
+                <a-box mixin="floor black" position="40.297 0 0" rotation="90 0 0" static-body="shape: box" 
 
                     > 
 
@@ -365,9 +365,8 @@
 
                 <!--class="floor"--> 
 
-                <!-- Ceiling--> 
-
-                <a-box mixin="floor primary" position="40.297 6 0" rotation="90 0 0"> 
+                <!-- Ceiling-->
+                <a-box mixin="floor black" position="40.297 6 0" rotation="90 0 0"> 
 
                 </a-box> 
 
@@ -1331,7 +1330,7 @@
 
                         <a-plane id="ryeblue" material="shader:standard; transparent: true; src:#ryeblue;" 
 
-                            position="70.686 3.309 -4.831" height="2.020" width="8.780" depth="0.1"></a-plane> 
+                            position="70.686 3 -4.831" height="2.020" width="8.780" depth="0.1"></a-plane> 
 
         
 
@@ -1341,7 +1340,7 @@
 
                             rotation="0 -90 0" 
 
-                            height="6" width="8" depth="0.1" 
+                            height="5.050" width="8.330" depth="0.1" 
 
                             ></a-plane> 
 
@@ -1355,10 +1354,6 @@
 
                         <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
 
-                        <a-cylinder mixin="secondary" height=".025" 
-                        radius=".5" 
-                        rotation="90 0 0" position="62.474 2.128 -4.809"></a-cylinder>
-
                          <a-sound 
                             src="#spidervideoaudio"
                             autoplay="true"
@@ -1367,11 +1362,9 @@
                             sound="maxDistance: 600">
                         </a-sound>
 
-                        <a-cylinder mixin="secondary" height=".025" 
-                        radius=".5" 
-                        rotation="90 0 0" position="62.474 3.687 -4.809"></a-cylinder>
+                       
 
-                        <a-plane mixin="black" position="62.448 2.977 -4.837" width="1.110" height="2.750"></a-plane>
+                        
 
                         <a-gltf-model src="#spider" position="65.089 2.075 -4.834" rotation="-1.330 128.940 0" 
 
@@ -1384,17 +1377,11 @@
 
                             scale=".001 .001 .001"></a-gltf-model> 
                             
-                            
-                        <a-gltf-model src="#spider" position="77.006 2.221 4.801" rotation="49.68 -366.710 -276.350" 
-
-                            scale=".055 .055 .055"></a-gltf-model>
-                            
-                        <a-gltf-model src="#spider" position="77.006 2.221 4.801" rotation="49.68 -366.710 -276.350" 
-
-                            scale=".055 .055 .055"></a-gltf-model>
 
                         
                         <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -3.706" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
+
+                         <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="76.242 1.651 4.886" rotation="37.020 -86.160 90" scale="1.5 1.5 1.5"></a-obj-model> 
 
         
 
