@@ -1441,9 +1441,26 @@
                 document.addEventListener('click', tryPlay, { once: true });
                 document.addEventListener('touchstart', tryPlay, { once: true });
                 window.addEventListener('load', tryPlay);
+                
             })();
-        </script>
-</body> 
+
+            const startButton = document.querySelector('#startButton');
+            const startOverlay = document.querySelector('#startOverlay');
+
+            startButton.addEventListener('click', () => {
+            const sounds = document.querySelectorAll('a-sound');
+
+        sounds.forEach((el) => {
+                    if (el.components.sound) {
+                    el.components.sound.playSound();
+                    }
+                });
+
+                startOverlay.classList.add('hidden');
+                });
+
+                        </script>
+                </body> 
 
   
 
