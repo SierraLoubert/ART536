@@ -319,11 +319,11 @@
 
             <!-- hand controls --> 
 
-            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" 
+            <a-entity id="left-hand" raycaster="objects: .floor, .clickable" oculus-touch-controls="hand: left" 
 
                 blink-controls></a-entity> 
 
-            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" 
+            <a-entity id="right-hand" raycaster="objects: .floor, .clickable" oculus-touch-controls="hand: right" 
 
                 blink-controls></a-entity> 
 
@@ -1289,21 +1289,21 @@
                         <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
 
                         <!-- START BUTTON -->
-                        <a-box 
+                        <a-circle 
                             id="startButtonVR"
-                            position="61 1.9 -4.831"
-                            depth="0.2"
-                            height="1"
-                            width="2"
-                            mixtin="secondary"
+                            class="clickable"
+                            position="62.482 2.112 -4.831"
+                            radius="0.5"
+                            mixin="secondary"
                             >
-                        </a-box>
+                        </a-circle>
 
                         <!-- TEXT on button -->
                         <a-text 
-                            value="Start Experience"
-                            position="61 1.9 -4.831"
-                            mixtin="white"
+                            id="startButtonText"
+                            class="clickable"
+                            position="61.848 2.796 -4.831"
+                            mixin="white"
                             width="4">
                         </a-text>
 
@@ -1444,20 +1444,67 @@
                 
             })();
 
-            const startButton = document.querySelector('#startButton');
-            const startOverlay = document.querySelector('#startOverlay');
+            const startButton = document.querySelector('#startButtonVR');
+            const startButtonText = document.querySelector('#startButtonText');
+            const soundEntity = document.querySelector('#soundVR');
+            const rawAudio = document.getElementById('spidervideoaudio');
+            const camera = document.querySelector('#camera');
 
-            startButton.addEventListener('click', () => {
-            const sounds = document.querySelectorAll('a-sound');
+            function unlockAudioContext() {
+                const audioCtx = AFRAME.THREE.AudioContext.getContext();
+                if (audioCtx && audioCtx.state === 'suspended') {
+                    audioCtx.resume().catch(function () {
+                        // Some browsers can still block until a trusted gesture.
+                    });
+                }
+            }
 
-        sounds.forEach((el) => {
-                    if (el.components.sound) {
-                    el.components.sound.playSound();
-                    }
-                });
+            function playStartAreaSound() {
+                unlockAudioContext();
 
-                startOverlay.classList.add('hidden');
-                });
+                if (soundEntity && soundEntity.components && soundEntity.components.sound) {
+                    soundEntity.components.sound.stopSound();
+                    soundEntity.components.sound.playSound();
+                    return;
+                }
+
+                if (rawAudio) {
+                    rawAudio.currentTime = 0;
+                    rawAudio.play().catch(function () {
+                        // Final fallback can still fail until browser receives a trusted gesture.
+                    });
+                }
+            }
+
+            [startButton, startButtonText].forEach(function (el) {
+                if (!el) return;
+                el.addEventListener('click', playStartAreaSound);
+            });
+
+            ['click', 'touchstart', 'keydown'].forEach(function (eventName) {
+                document.addEventListener(eventName, unlockAudioContext, { once: true });
+            });
+
+            // Fallback proximity trigger for when the player gets near the start area.
+            var proximityPlayed = false;
+            function checkStartAreaProximity() {
+                if (!camera || !soundEntity) return;
+
+                var cameraPos = new THREE.Vector3();
+                var soundPos = new THREE.Vector3();
+                camera.object3D.getWorldPosition(cameraPos);
+                soundEntity.object3D.getWorldPosition(soundPos);
+
+                var distance = cameraPos.distanceTo(soundPos);
+                if (distance <= 3.5 && !proximityPlayed) {
+                    playStartAreaSound();
+                    proximityPlayed = true;
+                } else if (distance > 4.5) {
+                    proximityPlayed = false;
+                }
+            }
+
+            setInterval(checkStartAreaProximity, 250);
 
                         </script>
                 </body> 
