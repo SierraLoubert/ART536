@@ -18,6 +18,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script> 
 
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+
 </head> 
 
   
@@ -310,6 +312,10 @@
         <a-light type="directional" shadow></a-light> 
 
   
+        <a-entity id="player-phone" movement-controls="controls: keyboard, touch; speed: 0.2">
+         <a-entity camera look-controls position="0 1.6 0"></a-entity>
+            YOU HAVE MORE STUFF HERE FOR TELEPORTATION. DO NOT REMOVE THEM!!!
+        </a-entity>
 
         <a-entity id="player" position="-36 0 0"> 
 
