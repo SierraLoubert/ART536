@@ -33,8 +33,7 @@
         <!-- Asset Rules--> 
 
         <a-assets> 
-
-  
+            <!-- mixins -->
 
             <a-mixin id="floor" geometry="primitive: box; width: 85; height: 10; depth:0.1"></a-mixin> 
 
@@ -90,7 +89,7 @@
 
   
 
-            <a-mixin id="cube" scale="0.02 0.03 0.02" materials="color:#FAF7F0" shadow></a-mixin>
+            <a-mixin id="cube" scale="0.02 0.03 0.02" material="color:#FFFFFF" shadow></a-mixin>
   
 
             <a-mixin id="map" geometry="primitive: box; width: 1.960; height: .001; depth:0.6"></a-mixin> 
@@ -214,10 +213,7 @@
             <img id="exleftwall" src="../assets/textures/Finalproject/Left Wall@3x.png" alt=""> 
 
   
-
-        </a-assets> 
-
-        <a-assets id="3Dishmodels"> 
+            <!--"3Dishmodels"--> 
 
             <a-asset-item id="map-middle-dot" src="../assets/models/MapMiddle Dot.gltf"></a-asset-item> 
 
@@ -229,11 +225,7 @@
 
             <a-asset-item id="spiderstring" src="../assets/models/spideronstring.gltf"></a-asset-item>
 
-        </a-assets> 
-
-  
-
-        <a-assets id="3D-Online"> 
+            <!--"3D-Online"--> 
 
             <a-asset-item id="blackwidow-obj" src="../assets/3D/sp/black_widow.obj"></a-asset-item>
             <a-asset-item id="blackwidow-mtl" src="../assets/3D/sp/black_widow.mtl"></a-asset-item>
@@ -291,16 +283,6 @@
 
         <a-obj-model id="lastroomSP" src="#blackwidow-obj" material="map:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="39.260 1.049 0.017" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
 
-
-        <a-obj-model 
-  id="lastroomSP2"
-  src="#blackwidow-obj"
-  material="map:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm"
-  position="39.260 1.049 0.017"
-  rotation="0 -80 0"
-  scale="0.2 0.2 0.2">
-</a-obj-model>
-
         <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -4.994" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
         <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" position="77.164 0.453 5" scale="1 1 1"></a-obj-model> 
@@ -314,7 +296,6 @@
   
         <a-entity id="player-phone" movement-controls="controls: keyboard, touch; speed: 0.2">
          <a-entity camera look-controls position="-36 1.8 0"></a-entity>
-            YOU HAVE MORE STUFF HERE FOR TELEPORTATION. DO NOT REMOVE THEM!!!
         </a-entity>
 
         <a-entity id="player" position="-36 0 0"> 
@@ -1294,26 +1275,6 @@
 
                         <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
 
-                        <!-- TEXT on button -->
-                        <!-- START BUTTON -->
-                       <!-- <a-circle 
-                            id="startButtonVR"
-                            class="clickable"
-                            position="62.482 2.112 -4.831"
-                            radius="0.5"
-                            mixin="secondary"
-                            >
-                        </a-circle>
-
-                        
-                        <a-text 
-                            id="startButtonText"
-                            class="clickable"
-                            position="61.848 2.796 -4.831"
-                            mixin="white"
-                            width="4">
-                        </a-text> -->
-
                         <!-- Sound -->
                         <a-sound 
                             id="soundVR"
@@ -1323,9 +1284,6 @@
                             position="62.373 2.075 -4.809"
                             sound="maxDistance: 300">
                         </a-sound>
-
-                       
-
                         
 
                         <a-gltf-model src="#spider" position="65.089 2.075 -4.834" rotation="-1.330 128.940 0" 
