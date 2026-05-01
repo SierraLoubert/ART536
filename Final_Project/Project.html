@@ -206,7 +206,7 @@
 
              <img id="realspiderstring" src="../assets/textures/Finalproject/realisticspideronstring.png" alt=""> 
             
-            <img id="centralwall" src="../assets/textures/Finalproject/Center Wall_black@3x.png" alt=""> 
+            <img id="centralwall" src="../assets/textures/Finalproject/Center Wall@3x.png" alt=""> 
 
             <img id="exrightwall" src="../assets/textures/Finalproject/Right Wall@3x.png" alt=""> 
 
@@ -299,12 +299,12 @@
         </a-entity>-->
 
         <a-entity id="player"
-          position="-36 0 0"
+          position="-74 0 0"
           movement-controls="controls: keyboard, touch; speed: 0.2">
 
             <!-- Camera -->
             <a-entity id="camera"
-                        position="-36 1.8 0"
+                        position="36 1.8 0"
                         camera
                         look-controls>
             </a-entity>
@@ -967,7 +967,7 @@
 
                 <!--Circle Wall--> 
 
-                <a-cylinder mixin="circlewall black" position="41.976 2.910 0.091"> 
+                <a-cylinder mixin="circlewall brown" position="41.976 2.910 0.091"> 
 
                 </a-cylinder> 
 
@@ -1066,7 +1066,7 @@
 
                 <a-plane id="expience" material="shader:standard; transparent: true; src:#ryeblue; alphaTest: 0.1;" 
 
-                    position="-1.312 2.6 0" rotation="0 90 0" width="7" height="2"></a-plane> 
+                    position="-1.312 2.6 0" rotation="0 90 0" width="5" height="2"></a-plane> 
 
   
 
@@ -1301,7 +1301,7 @@
                             mixin="white"
                             width="4">
                         </a-text> -->
-                        
+
                         <!-- Sound -->
                         <a-sound 
                             id="soundVR"
@@ -1309,7 +1309,7 @@
                             autoplay="true"
                             loop="true"
                             position="62.373 2.075 -4.809"
-                            sound="maxDistance: 300">
+                            sound="maxDistance: 100">
                         </a-sound>
                         
 
