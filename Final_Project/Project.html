@@ -294,27 +294,35 @@
         <a-light type="directional" shadow></a-light> 
 
   
-        <a-entity id="player-phone" movement-controls="controls: keyboard, touch; speed: 0.2">
+        <!--<a-entity id="player-phone" movement-controls="controls: keyboard, touch; speed: 0.2">
          <a-entity camera look-controls position="-36 1.8 0"></a-entity>
+        </a-entity>-->
+
+        <a-entity id="player"
+          position="-36 0 0"
+          movement-controls="controls: keyboard, touch; speed: 0.2">
+
+            <!-- Camera -->
+            <a-entity id="camera"
+                        position="-36 1.8 0"
+                        camera
+                        look-controls>
+            </a-entity>
+
+            <!-- VR Hands -->
+            <a-entity id="left-hand"
+                        oculus-touch-controls="hand: left"
+                        raycaster="objects: .floor, .clickable"
+                        blink-controls>
+            </a-entity>
+
+            <a-entity id="right-hand"
+                        oculus-touch-controls="hand: right"
+                        raycaster="objects: .floor, .clickable"
+                        blink-controls>
+            </a-entity>
+
         </a-entity>
-
-        <a-entity id="player" position="-36 0 0"> 
-
-            <!-- camera --> 
-
-            <a-entity id="camera" position="0 1.8 0" camera wasd-controls look-controls></a-entity> 
-
-            <!-- hand controls --> 
-
-            <a-entity id="left-hand" raycaster="objects: .floor, .clickable" oculus-touch-controls="hand: left" 
-
-                blink-controls></a-entity> 
-
-            <a-entity id="right-hand" raycaster="objects: .floor, .clickable" oculus-touch-controls="hand: right" 
-
-                blink-controls></a-entity> 
-
-        </a-entity> 
 
         <a-entity id="building" position="-37.884 0 0"> 
 
