@@ -999,6 +999,9 @@
 
             <a-entity id="Room1"><!--#1 Room--> 
 
+                 <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -4.273" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
+
+
                  <a-plane id="arrow" width="2" height="0.7" position="27.820 1.791 1.512" rotation="0 -90 0" 
 
                     material="shader: standard; transparent: true; src:#arrow"> 
@@ -1284,10 +1287,10 @@
                         <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
 
                          <!-- START BUTTON -->
-                       <!-- <a-circle 
+                        <a-circle 
                             id="startButtonVR"
                             class="clickable"
-                            position="62.482 2.112 -4.831"
+                            position="57.627 1.384 -4.831"
                             radius="0.5"
                             mixin="secondary"
                             >
@@ -1297,10 +1300,10 @@
                         <a-text 
                             id="startButtonText"
                             class="clickable"
-                            position="61.848 2.796 -4.831"
+                            position="57.627 1.384 -4.831"
                             mixin="white"
                             width="4">
-                        </a-text> -->
+                        </a-text> 
 
                         <!-- Sound -->
                         <a-sound 
@@ -1308,7 +1311,7 @@
                             src="#spidervideoaudio"
                             autoplay="true"
                             loop="true"
-                            position="62.373 2.075 -4.809"
+                            position="57.627 1.384 -4.831"
                             sound="maxDistance: 100">
                         </a-sound>
                         
@@ -1326,8 +1329,7 @@
                             
 
                         
-                        <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -3.706" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
-
+                       
                          <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="76.242 1.651 4.886" rotation="37.020 -86.160 90" scale="1.5 1.5 1.5"></a-obj-model> 
 
         
@@ -1342,7 +1344,7 @@
 
                         <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #ffffff"  mixin="white" position="79.186 5.542 -4.930" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
-                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #ffffff"  mixin="white" position="78.132 4.058 4.066" rotation= "-20.610 37.620 0" scale=".04 0.04 0.04"></a-obj-model> 
+                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #ffffff"  mixin="white" position="78.751 4.167 4.428" rotation= "-20.610 37.620 0" scale=".04 0.04 0.04"></a-obj-model> 
 
                         <a-gltf-model src="#spider" position="76.353 5.263 4.327" rotation="-1.330 128.940 0" 
                             scale=".001 .001 .001"></a-gltf-model> 
@@ -1352,6 +1354,7 @@
 
                         <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #ffffff"  mixin="white" position="77.214 0.008 -0.754" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
+                        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="color: #ffffff"  mixin="white" position="78.746 0.019 -4.645" rotation= "37.3 -202.500 45" scale="0.02 0.02 0.02"></a-obj-model>
                         
                         <a-gltf-model src="#spiderstring" 
 
@@ -1400,11 +1403,14 @@
                         <a-plane id="spiderweb2" material="shader:standard; transparent: true; src:#spiderweb; alphaTest: 0.1;" 
                         position="58 5.302 4.880"></a-plane>
 
-                         <a-plane id="spiderweb2" material="shader:standard; transparent: true; src:#spiderweb; alphaTest: 0.1;" 
-                        position="63.052 2.013 -4.836"></a-plane>
+                         <a-plane id="spiderweb2" material="shader:standard; transparent: true; src:#spiderweb; alphaTest: 0.1;"
+                         rotation="-15 0 0" 
+                        position="63.052 0.248 -4.622"
+                        height="0.5"
+                        width="0.5"></a-plane>
 
                         <a-plane id="spiderweb2" material="shader:standard; transparent: true; src:#spiderweb; alphaTest: 0.1;" 
-                        position="65.160 2.013 -4.836"></a-plane>
+                        position="65.160 3.673 -4.836"></a-plane>
                     </a-entity> 
 
             </a-entity> 
