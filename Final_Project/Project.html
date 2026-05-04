@@ -277,18 +277,6 @@
 
         </a-assets> 
 
-  
-
-        <!-- Using the asset management system. Used below--> 
-
-        <a-obj-model id="lastroomSP" src="#blackwidow-obj" material="map:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="39.260 1.049 0.017" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
-
-        <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -4.994" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
-
-        <a-obj-model src="#spiderweb2-obj" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" material="src:#spiderweb2; normalMap:#spiderweb2Nm; roughnessMap:#spiderweb2Rm" position="77.164 0.453 5" scale="1 1 1"></a-obj-model> 
-
-        <!--<a-obj-model src="#cube_open-obj" material="color: #d3a12a" ></a-obj-model>--> 
-
         <a-light type="ambient" intensity="0.3" shadow></a-light> 
 
         <a-light type="directional" shadow></a-light> 
@@ -321,6 +309,13 @@
                         raycaster="objects: .floor, .clickable"
                         blink-controls>
             </a-entity>
+
+             <!--assets that didn't make it into the room--> 
+
+        <a-obj-model id="lastroomSP" src="#blackwidow-obj" material="map:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="39.260 1.049 0.017" rotation="0 -80 0" scale="0.2 0.2 0.2"></a-obj-model> 
+
+        <a-obj-model src="#spiderweb-obj" material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -4.831" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model> 
+
 
         </a-entity>
 
@@ -908,17 +903,17 @@
 
                ></a-obj-model> 
 
-               <a-plane id="spiderweb" material="shader:standard; transparent: true; src:spiderweb; alphaTest: 0.1;" position="28.478 0.252 -3.679" rotation="-45.000 90 0" height=".5" width="0.440" depth="0.1"></a-plane>
+               <a-plane id="spiderweb" material="shader:standard; transparent: true; src:spiderweb; alphaTest: 0.1;" position="28.478 0.252 -3.679" rotation="-45.000 90 0" height=".5" width="0.420" depth="0.1"></a-plane>
 
                     <a-obj-model mixin="cube" src="#cube_open-obj" material="color: #d3a12a"  position="28.140 0.663 -3.686" rotation="0 0 -90"></a-obj-model> 
 
                     <a-obj-model src="#emptyjar-obj"  position="28.478 0.488 -3.686" scale=".02 .02 .02" material="shader: standard; opacity: 0.25; transparent: true; depthWrite: false;"></a-obj-model> 
 
-                     <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.499 0.531 -3.685" rotation="90 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                     <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.499 0.634 -3.685" rotation="90 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
                     <a-obj-model mixin="cube" src="#cube_open-obj" material="color: #d3a12a"  position="28.140 1.055 -3.686" rotation="0 0 -90" ></a-obj-model> 
 
-                    <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.478 0.775 -3.686" rotation="0 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
+                    <a-obj-model src="#blackwidow-obj" material="src:#spider; normalMap:#spiderNm; roughnessMap:#spiderRm" position="28.513 0.864 -3.686" rotation="0 80 0" scale="0.02 0.02 0.02"></a-obj-model> 
 
                     <a-obj-model mixin="cube" src="#cube_open-obj" material="color: #d3a12a"  position="28.140 1.450 -3.686" rotation="0 0 -90"></a-obj-model> 
 
@@ -999,7 +994,7 @@
 
             <a-entity id="Room1"><!--#1 Room--> 
 
-                 <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -4.273" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
+                 <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" position="22.038 4.589 -5.036" rotation= "45 0 0" scale="0.02 0.02 0.02"></a-obj-model>
 
 
                  <a-plane id="arrow" width="2" height="0.7" position="27.820 1.791 1.512" rotation="0 -90 0" 
@@ -1097,7 +1092,7 @@
 
             <a-plane id="spiderweb2" material="shader:standard; transparent: true; src:#spiderweb; alphaTest: 0.1;" 
 
-                    position="-1.021 5.302 -4.402"  rotation="10 45 0" height=".820" width="1.09" depth="0.1"></a-plane> 
+                    position="-0.994 5.680 -4.434"  rotation="45 45 0" height=".820" width="1.09" depth="0.1"></a-plane> 
                 
 
          
@@ -1213,7 +1208,7 @@
 
         
 
-                        <a-gltf-model src="#map-middle-dot" position="43.660 2.650 0.024" rotation="2.01 -119.97 -3.18" scale=".009 .008 .008"></a-gltf-model> 
+                        <a-gltf-model src="#map-middle-dot" position="43.685 2.650 -0.052" rotation="3.100 -128.300 -2.380" scale=".009 .008 .008"></a-gltf-model> 
 
                         <a-obj-model src="#spiderweb-obj"material="src:#spiderweb; normalMap:#spiderwebNm; roughnessMap:#spiderwebRm" material="color: #d3a12a"  mixin="white" position="55.820 5.758 4.712" rotation= "47.350 -180.820 -97.260" scale="0.005 0.005 0.005"></a-obj-model> 
 
@@ -1323,7 +1318,7 @@
         
 
 
-                         <a-gltf-model src="#spider" position="62.984 5.163 -4.195" rotation="-1.330 128.940 0" 
+                         <a-gltf-model src="#spider" position="62.984 5.163 -4.886" rotation="-1.330 128.940 0" 
 
                             scale=".001 .001 .001"></a-gltf-model> 
                             
