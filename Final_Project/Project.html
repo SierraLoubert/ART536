@@ -204,7 +204,9 @@
 
             <img id="silkwebspider" src="../assets/textures/Finalproject/Silkwebspider.png" alt=""> 
 
-             <img id="realspiderstring" src="../assets/textures/Finalproject/realisticspideronstring.png" alt=""> 
+             <img id="nosoundtext" src="../assets/textures/Finalproject/nosoundtext@3x.png" alt=""> 
+
+             <img id="goldmaptext" src="../assets/textures/Finalproject/mapgoldtext@3x.png" alt=""> 
             
             <img id="centralwall" src="../assets/textures/Finalproject/Center Wall@3x.png" alt=""> 
 
@@ -1279,26 +1281,17 @@
                             height="2.5">
                         </a-plane>
 
-                        <a-plane mixin="secondary" position="59.525 2.977 -4.843" width="4.530" height="2.750"></a-plane>
+                        <a-plane mixin="black" position="59.525 2.653 -4.843" width="4.250" height="3.380"></a-plane>
 
                          <!-- START BUTTON -->
                         <a-circle 
                             id="startButtonVR"
                             class="clickable"
-                            position="57.627 1.320 -4.831"
+                            position="57.740 1.320 -4.831"
                             radius="0.25"
                             mixin="secondary"
                             >
                         </a-circle>
-
-                        
-                        <a-text 
-                            id="startButtonText"
-                            class="clickable"
-                            position="57.627 1.320 -4.831"
-                            mixin="white"
-                            width="4">
-                        </a-text> 
 
                         <!-- Sound -->
                         <a-sound 
@@ -1309,6 +1302,14 @@
                             position="57.627 1.384 -4.831"
                             sound="maxDistance: 100;  volume: 0.5">
                         </a-sound>
+
+                        <!--Text-->
+                        <a-plane
+                            material="shader:standard; transparent: true; src: #nosoundtext;"
+                            position="59.214 1.319  -4.831"
+                            width="2.4"
+                            height=".360">
+                        </a-plane>
                         
 
                         <a-gltf-model src="#spider" position="65.089 2.075 -4.834" rotation="-1.330 128.940 0" 
